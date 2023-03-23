@@ -1,97 +1,132 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML Academy: {{Blank}}</title>
-        <link rel="icon" href="favicon.ico"><!--32x32-->
-        <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="img/favicons/apple-icon.png"><!--180x180-->
-        <link rel="manifest" href="manifest.webmanifest">
-    </head>
-    <body>
-        <header class="page-header">
-            <nav>
-                <a href="index.html"><img src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"></a>
-                <ul class="page-menu">
-                    <li class="page-menu-item">
-                        <a href="blank.html">Студия</a>
-                    </li>
-                    <li class="page-menu-item">
-                        <a href="blank.html">Клиенты</a>
-                    </li>
-                    <li class="page-menu-item">
-                        <a href="catalog.html">Магазин</a>
-                    </li>
-                    <li class="page-menu-item">
-                        <a href="blank.html">Контакты</a>
-                    </li>
-                </ul>
-                <a href="blank.html" class="user-basket">
-                    Корзина
-                </a>
-            </nav>
-        </header>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: {{Blank}}</title>
+    <link rel="icon" href="favicon.ico" /><!--32x32-->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon.png" /><!--180x180-->
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-navigation">
+        <a class="page-navigation-logo" href="index.html">
+          <img
+            src="img/logo/nerds-logo.svg"
+            width="150"
+            height="65"
+            alt="logo NЁRDS DESIGN STUDIO"/>
+        </a>
+        <ul class="page-menu">
+          <li class="page-menu-item">
+            <a href="blank.html">Студия</a>
+          </li>
+          <li class="page-menu-item">
+            <a href="blank.html">Клиенты</a>
+          </li>
+          <li class="page-menu-item">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li class="page-menu-item">
+            <a href="blank.html">Контакты</a>
+          </li>
+        </ul>
+        <a href="blank.html" class="user-cart"> Корзина </a>
+      </nav>
+    </header>
 
-        <main></main>
-        
-        <footer class="page-footer">
-            <section class="map">
-                <h2 class="visually-hiden">Как до нас добраться</h2>
-                <img class="map-placeholder" src="img/map.png" width="1440" height="416" alt="Расположение NЁRDS DESIGN STUDIO">
-                <!--Здесь будет карта-->
-            </section>
-            
-            <section class="contacts">
-                <h2 class="visually-hiden">Контактная информация</h2>
-                <p>NЁRDS DESIGN STUDIO</p>
-                <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-                <a href="tel:+78005558628">+7 800 555-86-28</a>
-                <a class="button-style">Напишите нам</a>
-            </section>
+    <main></main>
 
-            <section class="social">
-                <h2 class="visually-hiden">Мы в социальных сетях</h2>
-                <ul class="social-network-list">
-                    <li class="social-item">
-                        <a href="#"><img src="img/social-icons/vk.svg" width="26" height="15" alt="VK"></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#"><img src="img/social-icons/fb.svg" width="12" height="22" alt="Facebook"></a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#"><img src="img/social-icons/insta.svg" width="21" height="21" alt="Instagram"></a>
-                    </li>
-                </ul>
-                <h2>Давайте дружить, это выгодно!</h2>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
-            </section>
-        </footer>
-        <section class="popup">
-            <h2>Напишите нам</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label>
-                        Ваше имя:<br>
-                        <input type="text" name="name" placeholder="Имя Фамилия">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Ваш email:<br>
-                        <input type="email" name="email" placeholder="email@example.com">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Текст письма:<br>
-                        <textarea name="appeals-text" rows="3">
-                            В свободной форме
-                        </textarea>
-                    </label>
-                </p>
-                <button type="submit">Отправить</button>
-            </form>
-        </section>
-        <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-    </body>
+    <footer class="page-footer">
+      <section class="footer-map">
+        <h2 class="visually-hiden">Как до нас добраться</h2>
+        <img
+          class="map-placeholder"
+          src="img/map.png"
+          width="1440"
+          height="416"
+          alt="Расположение NЁRDS DESIGN STUDIO"/>
+        <!--Здесь будет карта-->
+      </section>
+
+      <section class="footer-contacts">
+        <h2 class="visually-hiden">Контактная информация</h2>
+        <p>NЁRDS DESIGN STUDIO</p>
+        <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+        <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="button">Напишите нам</a>
+      </section>
+
+      <section class="social">
+        <h2 class="visually-hiden">Мы в социальных сетях</h2>
+        <ul class="socials-list">
+          <li class="social-item">
+            <a href="#">
+              <img
+                src="img/social-icons/vk.svg"
+                width="26"
+                height="15"
+                alt="VK"/>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img
+                src="img/social-icons/fb.svg"
+                width="12"
+                height="22"
+                alt="Facebook"/>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img
+                src="img/social-icons/insta.svg"
+                width="21"
+                height="21"
+                alt="Instagram"/>
+            </a>
+          </li>
+        </ul>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            Ваше имя:<br />
+            <input type="text" name="name" placeholder="Имя Фамилия" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш email:<br />
+            <input type="email" name="email" placeholder="email@example.com" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:<br />
+            <textarea name="appeals-text" rows="3">
+              В свободной форме
+            </textarea>
+          </label>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <p>
+      Репозиторий создан для обучения на профессиональном онлайн‑курсе «
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        HTML и CSS. Профессиональная вёрстка сайтов
+      </a>
+      ».
+    </p>
+  </body>
 </html>
