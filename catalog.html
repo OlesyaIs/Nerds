@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: {{Каталог NЁRDS DESIGN STUDIO}}</title>
@@ -7,36 +7,41 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png" /><!--180x180-->
     <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="page-header">
-      <nav class="page-navigation">
-        <a class="page-navigation-logo">
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-logo">
           <img
             src="img/logo/nerds-logo.svg"
             width="150"
             height="65"
             alt="logo NЁRDS DESIGN STUDIO"/>
         </a>
-        <ul class="page-menu">
-          <li class="page-menu-item">
+        <ul class="page-navigation">
+          <li class="page-navigation-item">
             <a href="blank.html">Студия</a>
           </li>
-          <li class="page-menu-item">
+          <li class="page-navigation-item">
             <a href="blank.html">Клиенты</a>
           </li>
-          <li class="page-menu-item">
+          <li class="page-navigation-item">
             <a href="catalog.html">Магазин</a>
           </li>
-          <li class="page-menu-item">
+          <li class="page-navigation-item">
             <a href="blank.html">Контакты</a>
           </li>
         </ul>
-        <a href="blank.html" class="user-cart"> Корзина </a>
+        <a class="user-cart" href="blank.html"> Корзина </a>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <h1>Магазин готовых шаблонов</h1>
 
       <section>
@@ -91,7 +96,7 @@
             <label for="filter-busket">Корзина</label>
           </fieldset>
 
-          <button type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -134,96 +139,96 @@
 
       <section>
         <h2 class="visually-hiden">Список шаблонов</h2>
-        <ul class="template-list">
-          <li class="template">
+        <ul class="cards-list">
+          <li class="card">
             <img
               src="img/catalog/sedona.png"
               width="358"
               height="578"
               alt="Скриншот информационного сайта"
             />
-            <div class="template-popup visually-hiden">
+            <div class="card-popup visually-hiden">
               <h3><a href="blank.html">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
-              <a class="button-style" href="blank.html">9 900 ₽</a>
+              <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
           </li>
-          <li class="template">
+          <li class="card">
             <img
               src="img/catalog/pink.png"
               width="358"
               height="578"
               alt="Скриншот продуктового лендинга приложения"
             />
-            <div class="template-popup visually-hiden">
+            <div class="card-popup visually-hiden">
               <h3><a href="blank.html">Pink App</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button-style" href="blank.html">9 900 ₽</a>
+              <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
           </li>
-          <li class="template">
+          <li class="card">
             <img
               src="img/catalog/borodinski.png"
               width="358"
               height="578"
               alt="Скриншот сайта салона красоты"
             />
-            <div class="template-popup visually-hiden">
+            <div class="card-popup visually-hiden">
               <h3><a href="blank.html">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button-style" href="blank.html">9 900 ₽</a>
+              <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
           </li>
-          <li class="template">
+          <li class="card">
             <img
               src="img/catalog/mishka.png"
               width="358"
               height="578"
               alt="Скриншот интернет-магазина"
             />
-            <div class="template-popup visually-hiden">
+            <div class="card-popup visually-hiden">
               <h3><a href="blank.html">Mishka</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a class="button-style" href="blank.html">9 900 ₽</a>
+              <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
           </li>
-          <li class="template">
+          <li class="card">
             <img
               src="img/catalog/a-plus.png"
               width="358"
               height="578"
               alt="Скриншот лендинга курсов"
             />
-            <div class="template-popup visually-hiden">
+            <div class="card-popup visually-hiden">
               <h3><a href="blank.html">A Plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="button-style" href="blank.html">9 900 ₽</a>
+              <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
           </li>
-          <li class="template">
+          <li class="card">
             <img
               src="img/catalog/kvast.png"
               width="358"
               height="578"
               alt="Скриншот промо-сайта"
             />
-            <div class="template-popup visually-hiden">
+            <div class="card-popup visually-hiden">
               <h3><a href="blank.html">Кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a class="button-style" href="blank.html">9 900 ₽</a>
+              <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
           </li>
         </ul>
         <ul class="pagination">
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+          <li><a class="pagination-button">1</a></li>
+          <li><a class="pagination-button" href="#">2</a></li>
+          <li><a class="pagination-button" href="#">3</a></li>
+          <li><a class="pagination-button pagination-button-next" href="#">Следующая</a></li>
         </ul>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="main-footer">
       <section class="footer-map">
         <h2 class="visually-hiden">Как до нас добраться</h2>
         <img
@@ -238,12 +243,12 @@
       <section class="footer-contacts">
         <h2 class="visually-hiden">Контактная информация</h2>
         <p>NЁRDS DESIGN STUDIO</p>
-        <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+        <address class="footer-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
         <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-        <a class="button">Напишите нам</a>
+        <a class="button contacts-button">Напишите нам</a>
       </section>
 
-      <section class="social">
+      <section class="footer-social">
         <h2 class="visually-hiden">Мы в социальных сетях</h2>
         <ul class="socials-list">
           <li class="social-item">
@@ -274,27 +279,37 @@
             </a>
           </li>
         </ul>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="wrapper">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
+
+      <p class="footer-copy">
+        Репозиторий создан для обучения на профессиональном онлайн‑курсе «
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML и CSS. Профессиональная вёрстка сайтов
+        </a>
+        ».
+      </p>
     </footer>
 
-    <section class="modal">
+    <section class="modal appeal">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <p class="appeal-item"></p>
           <label>
             Ваше имя:<br />
             <input type="text" name="name" placeholder="Имя Фамилия" />
           </label>
         </p>
-        <p>
+        <p class="appeal-item"></p>
           <label>
             Ваш email:<br />
             <input type="email" name="email" placeholder="email@example.com" />
           </label>
         </p>
-        <p>
+        <p class="appeal-item"></p>
           <label>
             Текст письма:<br />
             <textarea name="appeals-text" rows="3">
@@ -302,16 +317,9 @@
             </textarea>
           </label>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button modal-button" type="submit">Отправить</button>
       </form>
     </section>
 
-    <p>
-      Репозиторий создан для обучения на профессиональном онлайн‑курсе «
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        HTML и CSS. Профессиональная вёрстка сайтов
-      </a>
-      ».
-    </p>
   </body>
 </html>

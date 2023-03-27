@@ -1,0 +1,53 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-dark: #666666;
+  --basic-light: #E1E1E1;
+  --basic-extra-light: #EEEEEE;
+  --basic-white: #FFFFFF;
+
+  --special-dark: #444444;
+  --special: #FB565A;
+  --special-hover: #E74246;
+  --special-click: #D7373B;
+
+  --service: #00CA74;
+  --service-hover: #00BC6C;
+  --service-click: #00AA62;
+  --service-light: #EFC849;
+  --service-light-hover: #EAB534;
+  --service-light-click: #E5A722;
+
+  --icon-cart: #A6A6A6;
+
+  --filter-button: #EEEEEE;
+  --filter-button-hover: #DFDFDF;
+  --filter-button-click: #D5D5D5;
+  
+  --catalog: #4D4D4D;
+  --catalog-marker: #ABABAB;
+
+  --pagination: #EEEEEE;
+  --pagination-hover: #DFDFDF;
+  --pagination-click: #D5D5D5;
+  --pagination-active: #DBDBDB;
+
+  --modal-basic: #D7DCDE;
+  --modal-hover: #B4B9BB;
+  --modal-focus: #000000;
+  --modal-invalid: #E74246;
+}
+
+.page-body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
