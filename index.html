@@ -43,47 +43,49 @@
 
     <main class="container">
       <h1 class="visually-hiden">Интернет-магазин Nёrd's</h1>
-      <section class="sliders">
-        <div class="sliders-list">
-          <section class="slider active-slider">
-            <h2 class="visually-hiden">Преимущества</h2>
-            <p class="lead">Долго, дорого, <br>
-              скрупулезно.</p>
-            <p>
-              Математически выверенный дизайн для вашего сайта или мобильного
-              приложения.
-            </p>
-            <a class="button slider-button" href="blank.html">Узнать больше</a>
-          </section>
-  
-          <section class="slider">
-            <h2 class="visually-hiden">Математический подход</h2>
-            <p class="lead">Любим математику <br>
-              как никто другой</p>
-            <p>
-              Никакого креатива, только математические формулы для расчета идеальных
-              пропорций
-            </p>
-            <a class="button slider-button" href="blank.html">Узнать больше</a>
-          </section>
-  
-          <section class="slider">
-            <h2 class="visually-hiden">Рабочий график</h2>
-            <p class="lead">Только ночь, <br>
-              только хардкор</p>
-            <p>
-              Работать днем, как все? Мы против этого. Ближе к полуночи работа
-              только начинается.
-            </p>
-            <a class="button slider-button" href="blank.html">Узнать больше</a>
-          </section>
+      <section>
+        <div class="slider">
+          <div class="slider-slides">
+            <div class="slide active-slide">
+              <h2 class="visually-hiden">Преимущества</h2>
+              <p class="lead">Долго, дорого, <br>
+                скрупулезно.</p>
+              <p>
+                Математически выверенный дизайн для вашего сайта или мобильного
+                приложения.
+              </p>
+              <a class="button slider-button" href="blank.html">Узнать больше</a>
+            </div>
+    
+            <div class="slide">
+              <h2 class="visually-hiden">Математический подход</h2>
+              <p class="lead">Любим математику <br>
+                как никто другой</p>
+              <p>
+                Никакого креатива, только математические формулы для расчета идеальных
+                пропорций
+              </p>
+              <a class="button slider-button" href="blank.html">Узнать больше</a>
+            </div>
+    
+            <div class="slide">
+              <h2 class="visually-hiden">Рабочий график</h2>
+              <p class="lead">Только ночь, <br>
+                только хардкор</p>
+              <p>
+                Работать днем, как все? Мы против этого. Ближе к полуночи работа
+                только начинается.
+              </p>
+              <a class="button slider-button" href="blank.html">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <input type="radio" name="slider-value" value="placeholder.png" checked />
+            <input type="radio" name="slider-value" value="placeholder.png" />
+            <input type="radio" name="slider-value" value="placeholder.png" />
+          </div>
         </div>
-        
-        <input type="radio" name="slider-value" value="placeholder.png" checked />
-        <input type="radio" name="slider-value" value="placeholder.png" />
-        <input type="radio" name="slider-value" value="placeholder.png" />
       </section>
-      
 
       <section class="services">
         <h2 class="visually-hiden">Продукты</h2>
@@ -115,7 +117,8 @@
       <section class="description">
         <h2 class="visually-hiden">О студии</h2>
         <p class="lead">
-          Мы — маленькая, но гордая дизайн-студия из Краснодара.
+          Мы — маленькая, но гордая <br>
+          дизайн-студия из Краснодара.
         </p>
         <p>
           Исповедуем принципы минимализма и чистоты. Ставим математический
@@ -133,13 +136,13 @@
 
         <h3 class="list-title">с 2004 года Любим точность во всем:</h3>
         <dl class="principle-list">
-          <dt>146 <span>%</span></dt>
+          <dt>146<span class="percent">%</span></dt>
           <dd>Уровень самоотдачи</dd>
 
-          <dt>100 <span>%</span></dt>
+          <dt>100<span class="percent">%</span></dt>
           <dd>Соблюдение сроков</dd>
 
-          <dt>50 <span>%</span></dt>
+          <dt>50<span class="percent">%</span></dt>
           <dd>Минимальная предоплата</dd>
         </dl>
       </section>
@@ -212,6 +215,7 @@
         <ul class="socials-list">
           <li class="social-item">
             <a href="#">
+              <span class="social">вконтакте</span>
               <img
                 src="img/social-icons/vk.svg"
                 width="26"
@@ -221,6 +225,7 @@
           </li>
           <li class="social-item">
             <a href="#">
+              <span class="social">фейсбук</span>
               <img
                 src="img/social-icons/fb.svg"
                 width="12"
@@ -230,6 +235,7 @@
           </li>
           <li class="social-item">
             <a href="#">
+              <span class="social">инстаграм</span>
               <img
                 src="img/social-icons/insta.svg"
                 width="21"
@@ -238,18 +244,17 @@
             </a>
           </li>
         </ul>
-        <div class="footer-tagline wrapper">
+        <div class="footer-discount">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
 
       <p class="footer-copy">
-        Репозиторий создан для обучения на профессиональном онлайн‑курсе «
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+        Репозиторий создан для обучения на профессиональном онлайн‑курсе 
+        «<a class="button copy-button" href="https://htmlacademy.ru/intensive/htmlcss">
           HTML и CSS. Профессиональная вёрстка сайтов
-        </a>
-        ».
+        </a>».
       </p>
     </footer>
 
@@ -278,6 +283,7 @@
         </p>
         <button class="button modal-button" type="submit">Отправить</button>
       </form>
+      <button class="modal-close" type="button"></button>
     </section>
 
   </body>

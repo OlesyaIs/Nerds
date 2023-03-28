@@ -51,8 +51,12 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--basic-black);
+  color: var(--basic-extra-dark);
   background-color: var(--basic-white);
+}
+
+h1, h2, h3, h4 , h5, h6 {
+  color: var(-basic-black);
 }
 
 a {
@@ -130,10 +134,15 @@ img {
 /* Footer map */
 
 .footer-map {
+
   background-image: url(img/map.png) no-repeat;
 }
 
 /* Footer comtacts */
+.footer-contacts {
+  width: 319px;
+  height: 308px;
+}
 
 .footer-contacts p {
   font-size: 18px;
@@ -150,24 +159,26 @@ img {
   color: var(--basic-dark);
 }
 
-.footer-tagline h2 {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
-}
-
-.footer-tagline p {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--special-dark);
-}
-
 /* Footer social */
 
 .socials-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-discount h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+/* Footer discount */
+
+.footer-discount p {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--special-dark);
 }
 
 /* Modal */
@@ -179,28 +190,59 @@ img {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
+.modal.appeal {
+  width: 800px;
+  text-align: center;
+}
+
+.modal-close {
+  width: 21px;
+  height: 21px;
+  background: url(img/modal-close.svg) no-repeat;
+  opacity: 0.3;
+  border: none;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
 /* Index */
 /* Slider */
 
-.sliders {
+.slider {
   background-color: var(--basic-extra-light);
+}
+.slider-slides {
+  width: 300%;
+  overflow: hidden;
 }
 
 .slider .lead {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  color: var(-basic-black);
 }
 
-.slider:first-child {
+.slide {
+  width: 1157px;
+  float: left;
+}
+
+.slide:first-child {
   background: url(img/slider/smartphones.png) no-repeat;
 }
 
-.slider:nth-child(2) {
+.slide:nth-child(2) {
   background: url(img/slider/monoblocks.png) no-repeat;
 }
 
-.slider:last-child {
+.slide:last-child {
   background: url(img/slider/mobile-devices.png) no-repeat;
 }
 
@@ -253,4 +295,69 @@ img {
 
 .service-type:last-child .service-button:active {
   background-color: var(--service-light-active);
+}
+
+/* Description */
+
+.description {
+  background: url(img/nerds-festive.png) no-repeat;
+}
+
+.description .lead {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(-basic-black);
+}
+
+.description .list-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-extra-dark);
+}
+
+.order-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.principle-list dt {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(-basic-black);
+}
+
+.principle-list .percent {
+  font-size: 26px;
+  line-height: 40px;
+  vertical-align: text-top;
+}
+
+.principle-list dd {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Clients */
+
+.client-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.client {
+  opacity: 0.2; 
+}
+
+.client:hover {
+  opacity: 1; 
+}
+
+.client:active {
+  opacity: 0.1; 
 }
