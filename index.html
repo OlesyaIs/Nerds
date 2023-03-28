@@ -43,64 +43,71 @@
 
     <main class="container">
       <h1 class="visually-hiden">Интернет-магазин Nёrd's</h1>
-
-      <section class="slider">
-        <h2 class="visually-hiden">Преимущества</h2>
-        <p class="lead">Долго, дорого, скрупулезно.</p>
-        <p>
-          Математически выверенный дизайн для вашего сайта или мобильного
-          приложения.
-        </p>
-        <a class="button slider-button" href="blank.html">Узнать больше</a>
+      <section class="sliders">
+        <div class="sliders-list">
+          <section class="slider active-slider">
+            <h2 class="visually-hiden">Преимущества</h2>
+            <p class="lead">Долго, дорого, <br>
+              скрупулезно.</p>
+            <p>
+              Математически выверенный дизайн для вашего сайта или мобильного
+              приложения.
+            </p>
+            <a class="button slider-button" href="blank.html">Узнать больше</a>
+          </section>
+  
+          <section class="slider">
+            <h2 class="visually-hiden">Математический подход</h2>
+            <p class="lead">Любим математику <br>
+              как никто другой</p>
+            <p>
+              Никакого креатива, только математические формулы для расчета идеальных
+              пропорций
+            </p>
+            <a class="button slider-button" href="blank.html">Узнать больше</a>
+          </section>
+  
+          <section class="slider">
+            <h2 class="visually-hiden">Рабочий график</h2>
+            <p class="lead">Только ночь, <br>
+              только хардкор</p>
+            <p>
+              Работать днем, как все? Мы против этого. Ближе к полуночи работа
+              только начинается.
+            </p>
+            <a class="button slider-button" href="blank.html">Узнать больше</a>
+          </section>
+        </div>
+        
+        <input type="radio" name="slider-value" value="placeholder.png" checked />
+        <input type="radio" name="slider-value" value="placeholder.png" />
+        <input type="radio" name="slider-value" value="placeholder.png" />
       </section>
-
-      <section class="slider">
-        <h2 class="visually-hiden">Математический подход</h2>
-        <p class="lead">Любим математику как никто другой</p>
-        <p>
-          Никакого креатива, только математические формулы для расчета идеальных
-          пропорций
-        </p>
-        <a class="button slider-button" href="blank.html">Узнать больше</a>
-      </section>
-
-      <section class="slider">
-        <h2 class="visually-hiden">Рабочий график</h2>
-        <p class="lead">Только ночь, только хардкор</p>
-        <p>
-          Работать днем, как все? Мы против этого. Ближе к полуночи работа
-          только начинается.
-        </p>
-        <a class="button slider-button" href="blank.html">Узнать больше</a>
-      </section>
-
-      <input type="radio" name="slider-value" value="placeholder.png" checked />
-      <input type="radio" name="slider-value" value="placeholder.png" />
-      <input type="radio" name="slider-value" value="placeholder.png" />
+      
 
       <section class="services">
         <h2 class="visually-hiden">Продукты</h2>
-        <ul class="service-list">
+        <ul class="services-list">
           <li class="service-type">
             <h3>Веб-сайты</h3>
             <p class="product-description">
               Мир никогда не будет прежним после того как увидит ваш сайт!
             </p>
-            <a class="button" href="blank.html">Заказать</a>
+            <a class="button service-button" href="blank.html">Заказать</a>
           </li>
           <li class="service-type">
             <h3>Приложения</h3>
             <p class="product-description">
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
-            <a class="button" href="blank.html">Заказать</a>
+            <a class="button service-button" href="blank.html">Заказать</a>
           </li>
           <li class="service-type">
             <h3>Презентации</h3>
             <p class="product-description">
               Вы даже не подозреваете, насколько вы изумительны!
             </p>
-            <a class="button" href="blank.html">Заказать</a>
+            <a class="button service-button" href="blank.html">Заказать</a>
           </li>
         </ul>
       </section>
@@ -231,7 +238,7 @@
             </a>
           </li>
         </ul>
-        <div class="wrapper footer-tagline">
+        <div class="footer-tagline wrapper">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
