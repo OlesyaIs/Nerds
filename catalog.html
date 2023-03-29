@@ -13,7 +13,7 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
-  <body class="page-body">
+  <body class="page-body catalog-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-navigation-logo" href="index.html">
@@ -44,65 +44,77 @@
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
 
-      <section>
+      <section class="filters">
         <h2 class="visually-hiden">Фильтр шаблонов</h2>
 
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <label>Стоимость</label><br />
-            <input
-              type="range"
-              name="priceslider"
-              step="1"
-              min="0"
-              max="250000"
-              value="150000"
-            /><br />
-            <label
-              >от: <input type="number" name="current-min" value="0"
-            /></label>
-            <label
-              >до: <input type="number" name="current-max" value="150000"
-            /></label>
+          <fieldset class="filter-group filter-group-price">
+            <label class="filter-group-label">Стоимость</label><br />
+            <p class="filter-item">
+              <input
+                type="range"
+                name="priceslider"
+                step="1"
+                min="0"
+                max="250000"
+                value="150000"
+              /><br />
+              <label
+                >от: <input type="number" name="current-min" value="0"
+              /></label>
+              <label
+                >до: <input type="number" name="current-max" value="150000"
+              /></label>
+            </p>
           </fieldset>
 
-          <fieldset>
-            <label>Сетка:</label><br />
-            <input
-              type="radio"
-              name="grid"
-              value="adaptive"
-              id="filter-adaptive"
-              checked
-            />
-            <label for="filter-adaptive">Адаптивная</label><br />
-            <input type="radio" name="grid" value="fix" id="filter-fix" />
-            <label for="filter-fix">Фиксированная</label><br />
-            <input type="radio" name="grid" value="rubber" id="filter-rubber" />
-            <label for="filter-rubber">Резиновая</label>
+          <fieldset class="filter-group filter-group-grid">
+            <label class="filter-group-label">Сетка:</label><br />
+            <p class="filter-item">
+              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked />
+              <label for="filter-adaptive">Адаптивная</label><br />
+            </p>
+            <p class="filter-item">
+              <input type="radio" name="grid" value="fix" id="filter-fix" />
+              <label for="filter-fix">Фиксированная</label><br />
+            </p>
+            <p class="filter-item">
+              <input type="radio" name="grid" value="rubber" id="filter-rubber" />
+              <label for="filter-rubber">Резиновая</label>
+            </p>
           </fieldset>
 
-          <fieldset>
-            <label>Особенности:</label><br />
-            <input type="checkbox" name="slider" id="filter-slider" checked />
-            <label for="filter-slider">Слайдер</label><br />
-            <input type="checkbox" name="advantages" id="filter-advantages" />
-            <label for="filter-advantages">Блок преимуществ</label><br />
-            <input type="checkbox" name="news" id="filter-news" checked />
-            <label for="filter-news">Новости</label><br />
-            <input type="checkbox" name="gallery" id="filter-gallery" />
-            <label for="filter-gallery">Галерея</label><br />
-            <input type="checkbox" name="busket" id="filter-busket" />
-            <label for="filter-busket">Корзина</label>
+          <fieldset class="filter-group filter-group-features">
+            <label class="filter-group-label">Особенности:</label><br />
+            <p class="filter-item">
+              <input type="checkbox" name="slider" id="filter-slider" checked />
+              <label for="filter-slider">Слайдер</label><br />
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="advantages" id="filter-advantages" />
+              <label for="filter-advantages">Блок преимуществ</label><br />
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="news" id="filter-news" checked />
+              <label for="filter-news">Новости</label><br />
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="gallery" id="filter-gallery" />
+              <label for="filter-gallery">Галерея</label><br />
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="busket" id="filter-busket" />
+              <label for="filter-busket">Корзина</label>
+            </p>
           </fieldset>
 
           <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
 
-      <section>
-        <h2 class="visually-hiden">Сортировать:</h2>
-        <fieldset>
+      <section class="sort">
+        <h2 class="filter-group-label">Сортировать:</h2>
+        <fieldset class="filter-group">
           <input
             type="radio"
             name="sort-filter"
@@ -124,7 +136,7 @@
           <label for="sort-alphabet">По названию</label>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="filter-group">
           <label class="visually-hiden">По направлению</label>
           <input
             type="radio"
@@ -137,7 +149,7 @@
         </fieldset>
       </section>
 
-      <section>
+      <section class="catalog">
         <h2 class="visually-hiden">Список шаблонов</h2>
         <ul class="cards-list">
           <li class="card">

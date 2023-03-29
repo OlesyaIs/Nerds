@@ -59,6 +59,12 @@ h1, h2, h3, h4 , h5, h6 {
   color: var(-basic-black);
 }
 
+.page-body h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   color: var(--basic-black);
@@ -360,4 +366,36 @@ img {
 
 .client:active {
   opacity: 0.1; 
+}
+
+/* Catalog-page */
+
+.catalog-page h1 {
+  background-color: var(--basic-extra-light);
+}
+
+.filter-group {
+  border: none;
+}
+
+.filter-group-label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-item {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-extra-dark);
+}
+
+.filter-group-price .filter-item {
+  line-height: 22px;
+}
+
+.filter-group-price input {
+  background-color: var(--basic-extra-light);
+  border: none;
 }
