@@ -49,7 +49,7 @@
 
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-group filter-group-price">
-            <label class="filter-group-label">Стоимость</label><br />
+            <legend>Стоимость</legend>
             <p class="filter-item">
               <input
                 type="range"
@@ -69,7 +69,7 @@
           </fieldset>
 
           <fieldset class="filter-group filter-group-grid">
-            <label class="filter-group-label">Сетка:</label><br />
+            <legend>Сетка:</legend><br />
             <p class="filter-item">
               <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked />
               <label for="filter-adaptive">Адаптивная</label><br />
@@ -85,7 +85,7 @@
           </fieldset>
 
           <fieldset class="filter-group filter-group-features">
-            <label class="filter-group-label">Особенности:</label><br />
+            <legend>Особенности:</legend><br />
             <p class="filter-item">
               <input type="checkbox" name="slider" id="filter-slider" checked />
               <label for="filter-slider">Слайдер</label><br />
@@ -113,40 +113,16 @@
       </section>
 
       <section class="sort">
-        <h2 class="filter-group-label">Сортировать:</h2>
-        <fieldset class="filter-group">
-          <input
-            type="radio"
-            name="sort-filter"
-            value="price"
-            id="sort-price"
-            checked
-          />
-          <label for="sort-price">По цене</label>
-
-          <input type="radio" name="sort-filter" value="type" id="sort-type" />
-          <label for="sort-type">По типу</label>
-
-          <input
-            type="radio"
-            name="sort-filter"
-            value="alphabet"
-            id="sort-alphabet"
-          />
-          <label for="sort-alphabet">По названию</label>
-        </fieldset>
-
-        <fieldset class="filter-group">
-          <label class="visually-hiden">По направлению</label>
-          <input
-            type="radio"
-            name="sort-direction"
-            value="down"
-            id="sort-down"
-            checked
-          />
-          <input type="radio" name="sort-direction" value="up" id="sort-up" />
-        </fieldset>
+        <h2 class="sort-group-title">Сортировать:</h2>
+        <ul class="sort-parameter">
+          <li class="sort-item"><a href="#">По цене</a></li>
+          <li class="sort-item"><a href="#">По типу</a></li>
+          <li class="sort-item"><a href="#">По названию</a></li>
+        </ul>
+        <ul class="sort-direction">
+          <li class="sort-direction-item sort-down"><a href="#"></a></li>
+          <li class="sort-direction-item sort-up"><a href="#"></a></li>
+        </ul>
       </section>
 
       <section class="catalog">
@@ -160,7 +136,7 @@
               alt="Скриншот информационного сайта"
             />
             <div class="card-popup visually-hiden">
-              <h3><a href="blank.html">Sedona</a></h3>
+              <h3><a class="cards-link" href="blank.html">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
               <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
@@ -173,7 +149,7 @@
               alt="Скриншот продуктового лендинга приложения"
             />
             <div class="card-popup visually-hiden">
-              <h3><a href="blank.html">Pink App</a></h3>
+              <h3><a class="cards-link" href="blank.html">Pink App</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
@@ -186,7 +162,7 @@
               alt="Скриншот сайта салона красоты"
             />
             <div class="card-popup visually-hiden">
-              <h3><a href="blank.html">Barbershop</a></h3>
+              <h3><a class="cards-link" href="blank.html">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
               <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
@@ -199,7 +175,7 @@
               alt="Скриншот интернет-магазина"
             />
             <div class="card-popup visually-hiden">
-              <h3><a href="blank.html">Mishka</a></h3>
+              <h3><a class="cards-link" href="blank.html">Mishka</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
               <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
@@ -212,7 +188,7 @@
               alt="Скриншот лендинга курсов"
             />
             <div class="card-popup visually-hiden">
-              <h3><a href="blank.html">A Plus</a></h3>
+              <h3><a class="cards-link" href="blank.html">A Plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
               <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
@@ -225,14 +201,14 @@
               alt="Скриншот промо-сайта"
             />
             <div class="card-popup visually-hiden">
-              <h3><a href="blank.html">Кваст</a></h3>
+              <h3><a class="cards-link" href="blank.html">Кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
               <a class="button card-button" href="blank.html">9 900 ₽</a>
             </div>
           </li>
-        </ul>
+        </ul> 
         <ul class="pagination">
-          <li><a class="pagination-button">1</a></li>
+          <li><a class="pagination-button current">1</a></li>
           <li><a class="pagination-button" href="#">2</a></li>
           <li><a class="pagination-button" href="#">3</a></li>
           <li><a class="pagination-button pagination-button-next" href="#">Следующая</a></li>
