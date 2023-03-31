@@ -64,16 +64,21 @@ h1 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  text-align: center;
 }
 
 a {
+  font: inherit;
   text-decoration: none;
   color: var(--basic-black);
 }
 
 .button {
+  font: inherit;
   margin: 0;
   padding: 0;
+  text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--special);
@@ -200,7 +205,32 @@ img {
 
 .modal.appeal {
   width: 800px;
-  text-align: center;
+}
+
+.appeal-item label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.appeal-field {
+  color: var(--modal-basic);
+  border: 2px solid var(--modal-basic);
+}
+
+.appeal-field:hover {
+  color: var(--modal-hover);
+  border: 2px solid var(--modal-hover);
+}
+
+.appeal-field:focus {
+  color: var(--modal-focus);
+  border: 2px solid var(--modal-focus);
+}
+
+.appeal-field:invalid {
+  color: var(--modal-invalid);
+  border: 2px solid var(--modal-invalid);
 }
 
 .modal-close {
@@ -427,6 +457,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-align: left;
   text-transform: uppercase;
   list-style: none;
 }
@@ -483,6 +514,7 @@ img {
 .card-popup {
   width: 100%;
   height: 231px;
+  text-align: center;
   background-color: var(--basic-extra-light);
 }
 
@@ -518,6 +550,7 @@ img {
 .pagination-button {
   width: 50px;
   height: 50px;
+  text-align: center;
   background-color: var(--pagination);
   box-sizing: border-box;
 }
