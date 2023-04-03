@@ -45,8 +45,8 @@
       <h1 class="visually-hiden">Интернет-магазин Nёrd's</h1>
       <section>
         <div class="slider">
-          <div class="slider-slides">
-            <div class="slide active-slide">
+          <ul class="slider-slides">
+            <li class="slide active-slide">
               <h2 class="visually-hiden">Преимущества</h2>
               <p class="lead">Долго, дорого, <br>
                 скрупулезно.</p>
@@ -55,9 +55,9 @@
                 приложения.
               </p>
               <a class="button slider-button" href="blank.html">Узнать больше</a>
-            </div>
+            </li>
     
-            <div class="slide">
+            <li class="slide">
               <h2 class="visually-hiden">Математический подход</h2>
               <p class="lead">Любим математику <br>
                 как никто другой</p>
@@ -66,9 +66,9 @@
                 пропорций
               </p>
               <a class="button slider-button" href="blank.html">Узнать больше</a>
-            </div>
+            </li>
     
-            <div class="slide">
+            <li class="slide">
               <h2 class="visually-hiden">Рабочий график</h2>
               <p class="lead">Только ночь, <br>
                 только хардкор</p>
@@ -77,8 +77,8 @@
                 только начинается.
               </p>
               <a class="button slider-button" href="blank.html">Узнать больше</a>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="slider-controls">
             <input type="radio" name="slider-value" value="placeholder.png" checked />
             <input type="radio" name="slider-value" value="placeholder.png" />
@@ -264,20 +264,19 @@
         <p class="appeal-item">
           <label>
             Ваше имя:<br />
-            <input type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" />
+            <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" />
           </label>
         </p>
         <p class="appeal-item">
           <label>
             Ваш email:<br />
-            <input type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
+            <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
           </label>
         </p>
         <p class="appeal-item">
           <label>
             Текст письма:<br />
-            <textarea name="appeal-field appeal-text" rows="3">
-              В свободной форме
+            <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме">
             </textarea>
           </label>
         </p>

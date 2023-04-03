@@ -50,7 +50,7 @@
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-group filter-group-price">
             <legend>Стоимость</legend>
-            <p class="filter-item">
+            <p>
               <input
                 type="range"
                 name="priceslider"
@@ -60,50 +60,50 @@
                 value="150000"
               /><br />
               <label
-                >от: <input type="number" name="current-min" value="0"
-              /></label>
+                >от: <input type="number" name="current-min" value="0"/>
+              </label>
               <label
-                >до: <input type="number" name="current-max" value="150000"
-              /></label>
+                >до: <input type="number" name="current-max" value="150000"/>
+              </label>
             </p>
           </fieldset>
 
           <fieldset class="filter-group filter-group-grid">
             <legend>Сетка:</legend><br />
-            <p class="filter-item">
-              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked />
+            <p class="filter-option filter-radio">
+              <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked />
               <label for="filter-adaptive">Адаптивная</label><br />
             </p>
-            <p class="filter-item">
-              <input type="radio" name="grid" value="fix" id="filter-fix" />
+            <p class="filter-option filter-radio">
+              <input class="filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix" />
               <label for="filter-fix">Фиксированная</label><br />
             </p>
-            <p class="filter-item">
-              <input type="radio" name="grid" value="rubber" id="filter-rubber" />
+            <p class="filter-option filter-radio">
+              <input class="filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber" />
               <label for="filter-rubber">Резиновая</label>
             </p>
           </fieldset>
 
           <fieldset class="filter-group filter-group-features">
             <legend>Особенности:</legend><br />
-            <p class="filter-item">
-              <input type="checkbox" name="slider" id="filter-slider" checked />
+            <p class="filter-option filter-checkbox">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked />
               <label for="filter-slider">Слайдер</label><br />
             </p>
-            <p class="filter-item">
-              <input type="checkbox" name="advantages" id="filter-advantages" />
+            <p class="filter-option filter-checkbox">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages" />
               <label for="filter-advantages">Блок преимуществ</label><br />
             </p>
-            <p class="filter-item">
-              <input type="checkbox" name="news" id="filter-news" checked />
+            <p class="filter-option filter-checkbox">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked />
               <label for="filter-news">Новости</label><br />
             </p>
-            <p class="filter-item">
-              <input type="checkbox" name="gallery" id="filter-gallery" />
+            <p class="filter-option filter-checkbox">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery" />
               <label for="filter-gallery">Галерея</label><br />
             </p>
-            <p class="filter-item">
-              <input type="checkbox" name="busket" id="filter-busket" />
+            <p class="filter-option filter-checkbox">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="busket" id="filter-busket" />
               <label for="filter-busket">Корзина</label>
             </p>
           </fieldset>
