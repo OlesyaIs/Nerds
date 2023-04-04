@@ -10,39 +10,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
   </head>
+  
   <body class="page-body index-page">
-    <header class="main-header">
+
+    <header class="page-header">
       <nav class="main-navigation">
-        <a class="main-navigation-logo" href="index.html">
-          <img
-            src="img/logo/nerds-logo.svg"
-            width="150"
-            height="65"
-            alt="logo NЁRDS DESIGN STUDIO"/>
+        <a class="main-navigation-logo">
+          <img src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"/>
         </a>
         <ul class="page-navigation">
-          <li class="page-navigation-item">
-            <a href="blank.html">Студия</a>
-          </li>
-          <li class="page-navigation-item">
-            <a href="blank.html">Клиенты</a>
-          </li>
-          <li class="page-navigation-item">
-            <a>Магазин</a>
-          </li>
-          <li class="page-navigation-item">
-            <a href="blank.html">Контакты</a>
-          </li>
+          <li><a class="page-navigation-item" href="blank.html">Студия</a></li>
+          <li><a class="page-navigation-item" href="blank.html">Клиенты</a></li>
+          <li><a class="page-navigation-item" href="catalog.html">Магазин</a></li>
+          <li><a class="page-navigation-item" href="blank.html">Контакты</a></li>
         </ul>
         <a class="user-cart" href="blank.html"> Корзина </a>
       </nav>
     </header>
 
-    <main class="container">
-      <h1 class="visually-hiden">Интернет-магазин Nёrd's</h1>
+    <main>
+      <h1 class="main-title visually-hiden">Интернет-магазин Nёrd's</h1>
       <section>
         <div class="slider">
           <ul class="slider-slides">
@@ -56,7 +46,6 @@
               </p>
               <a class="button slider-button" href="blank.html">Узнать больше</a>
             </li>
-    
             <li class="slide">
               <h2 class="visually-hiden">Математический подход</h2>
               <p class="lead">Любим математику <br>
@@ -67,7 +56,6 @@
               </p>
               <a class="button slider-button" href="blank.html">Узнать больше</a>
             </li>
-    
             <li class="slide">
               <h2 class="visually-hiden">Рабочий график</h2>
               <p class="lead">Только ночь, <br>
@@ -102,14 +90,14 @@
             <p class="product-description">
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
-            <a class="button service-button" href="blank.html">Заказать</a>
+            <a class="button service-button service-button-green" href="blank.html">Заказать</a>
           </li>
           <li class="service-type">
             <h3>Презентации</h3>
             <p class="product-description">
               Вы даже не подозреваете, насколько вы изумительны!
             </p>
-            <a class="button service-button" href="blank.html">Заказать</a>
+            <a class="button service-button service-button-yellow" href="blank.html">Заказать</a>
           </li>
         </ul>
       </section>
@@ -129,9 +117,7 @@
         <ul class="order-list">
           <li class="order-item">Веб-сайтов любой сложности</li>
           <li class="order-item">Мобильных приложений для iOS и Android</li>
-          <li class="order-item">
-            Слайдшоу и видео для корпоративных презентаций
-          </li>
+          <li class="order-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
 
         <h3 class="list-title">с 2004 года Любим точность во всем:</h3>
@@ -151,40 +137,16 @@
         <h2 class="visually-hiden">Наши клиенты</h2>
         <ul class="client-list">
           <li class="client">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"
-              ><img
-                src="img/logo-clients/htmlacademy.svg"
-                width="199"
-                height="57"
-                alt="HTML Academy"
-            /></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-clients/htmlacademy.svg" width="199" height="57" alt="HTML Academy"/></a>
           </li>
           <li class="client">
-            <a
-              ><img
-                src="img/logo-clients/borodinski.png"
-                width="209"
-                height="90"
-                alt="Барбершоп Borodinski"
-            /></a>
+            <a><img src="img/logo-clients/borodinski.png" width="209" height="90" alt="Барбершоп Borodinski"/></a>
           </li>
           <li class="client">
-            <a
-              ><img
-                src="img/logo-clients/pink.png"
-                width="185"
-                height="52"
-                alt="Pink"
-            /></a>
+            <a><img src="img/logo-clients/pink.png" width="185" height="52" alt="Pink"/></a>
           </li>
           <li class="client">
-            <a
-              ><img
-                src="img/logo-clients/mishka.png"
-                width="173"
-                height="84"
-                alt="Магазин игрушек Mishka"
-            /></a>
+            <a><img src="img/logo-clients/mishka.png" width="173" height="84" alt="Магазин игрушек Mishka"/></a>
           </li>
         </ul>
       </section>
@@ -216,31 +178,19 @@
           <li class="social-item">
             <a href="#">
               <span class="social visually-hiden">вконтакте</span>
-              <img
-                src="img/social-icons/vk.svg"
-                width="26"
-                height="15"
-                alt="VK"/>
+              <img src="img/social-icons/vk.svg" width="26" height="15" alt="VK"/>
             </a>
           </li>
           <li class="social-item">
             <a href="#">
               <span class="social visually-hiden">фейсбук</span>
-              <img
-                src="img/social-icons/fb.svg"
-                width="12"
-                height="22"
-                alt="Facebook"/>
+              <img src="img/social-icons/fb.svg" width="12" height="22" alt="Facebook"/>
             </a>
           </li>
           <li class="social-item">
             <a href="#">
               <span class="social visually-hiden">инстаграм</span>
-              <img
-                src="img/social-icons/insta.svg"
-                width="21"
-                height="21"
-                alt="Instagram"/>
+              <img src="img/social-icons/insta.svg" width="21" height="21" alt="Instagram"/>
             </a>
           </li>
         </ul>

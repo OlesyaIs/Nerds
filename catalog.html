@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>HTML Academy: {{Каталог NЁRDS DESIGN STUDIO}}</title>
+    <title>HTML Academy: {{NЁRDS DESIGN STUDIO}}</title>
     <link rel="icon" href="favicon.ico" /><!--32x32-->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png" /><!--180x180-->
@@ -10,46 +10,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body class="page-body catalog-page">
-    <header class="main-header">
+
+    <header class="page-header">
       <nav class="main-navigation">
         <a class="main-navigation-logo" href="index.html">
-          <img
-            src="img/logo/nerds-logo.svg"
-            width="150"
-            height="65"
-            alt="logo NЁRDS DESIGN STUDIO"/>
+          <img src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"/>
         </a>
         <ul class="page-navigation">
-          <li class="page-navigation-item">
-            <a href="blank.html">Студия</a>
-          </li>
-          <li class="page-navigation-item">
-            <a href="blank.html">Клиенты</a>
-          </li>
-          <li class="page-navigation-item">
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li class="page-navigation-item">
-            <a href="blank.html">Контакты</a>
-          </li>
+          <li><a class="page-navigation-item" href="blank.html">Студия</a></li>
+          <li><a class="page-navigation-item" href="blank.html">Клиенты</a></li>
+          <li><a class="page-navigation-item active-page">Магазин</a></li>
+          <li><a class="page-navigation-item" href="blank.html">Контакты</a></li>
         </ul>
-        <a class="user-cart" href="blank.html"> Корзина </a>
+        <a class="user-cart" href="blank.html">Корзина</a>
       </nav>
     </header>
 
-    <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
+    <main>
+      <h1 class="main-title">Магазин готовых шаблонов</h1>
 
       <section class="filters">
         <h2 class="visually-hiden">Фильтр шаблонов</h2>
 
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-group filter-group-price">
-            <legend>Стоимость</legend>
+            <legend class="filter-group-title">Стоимость</legend>
             <p>
               <input
                 type="range"
@@ -69,7 +59,7 @@
           </fieldset>
 
           <fieldset class="filter-group filter-group-grid">
-            <legend>Сетка:</legend><br />
+            <legend class="filter-group-title">Сетка:</legend><br />
             <p class="filter-option filter-radio">
               <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked />
               <label for="filter-adaptive">Адаптивная</label><br />
@@ -85,7 +75,7 @@
           </fieldset>
 
           <fieldset class="filter-group filter-group-features">
-            <legend>Особенности:</legend><br />
+            <legend class="filter-group-title">Особенности:</legend><br />
             <p class="filter-option filter-checkbox">
               <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked />
               <label for="filter-slider">Слайдер</label><br />
@@ -108,7 +98,7 @@
             </p>
           </fieldset>
 
-          <button class="button filter-button" type="submit">Показать</button>
+          <button class="button-grey filter-button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -208,10 +198,10 @@
           </li>
         </ul> 
         <ul class="pagination">
-          <li><a class="pagination-button current">1</a></li>
-          <li><a class="pagination-button" href="#">2</a></li>
-          <li><a class="pagination-button" href="#">3</a></li>
-          <li><a class="pagination-button pagination-button-next" href="#">Следующая</a></li>
+          <li><a class="button-grey pagination-button current-button">1</a></li>
+          <li><a class="button-grey pagination-button" href="#">2</a></li>
+          <li><a class="button-grey pagination-button" href="#">3</a></li>
+          <li><a class="button-grey pagination-button pagination-button-next" href="#">Следующая</a></li>
         </ul>
       </section>
     </main>
