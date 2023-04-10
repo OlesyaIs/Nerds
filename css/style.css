@@ -172,8 +172,6 @@ img {
   opacity: 0.3;
 }
 
-.active-page 
-
 /* Footer */
 
 .main-footer {
@@ -185,7 +183,7 @@ img {
 
 .footer-map {
 
-  background-image: url(img/map.png) no-repeat;
+  background-image: url(../img/map.png) no-repeat;
 }
 
 /* Footer comtacts */
@@ -280,7 +278,7 @@ img {
 }
 
 .modal-close {
-  background: url(img/modal-close.svg) no-repeat;
+  background: url(../img/modal-close.svg) no-repeat;
   opacity: 0.3;
   border: none;
 }
@@ -313,15 +311,15 @@ img {
 }
 
 .slide:first-child {
-  background: url(img/slider/smartphones.png) no-repeat;
+  background: url(../img/slider/smartphones.png) no-repeat;
 }
 
 .slide:nth-child(2) {
-  background: url(img/slider/monoblocks.png) no-repeat;
+  background: url(../img/slider/monoblocks.png) no-repeat;
 }
 
 .slide:last-child {
-  background: url(img/slider/mobile-devices.png) no-repeat;
+  background: url(../img/slider/mobile-devices.png) no-repeat;
 }
 
 /* Services */
@@ -340,11 +338,11 @@ img {
 }
 
 .service-type:first-child {
-  background: url(img/services/laptop.png) no-repeat;
+  background: url(../img/services/laptop.png) no-repeat;
 }
 
 .service-type:nth-child(2) {
-  background: url(img/services/smartphones.png) no-repeat;
+  background: url(../img/services/smartphones.png) no-repeat;
 }
 
 .service-button-green {
@@ -360,7 +358,7 @@ img {
 }
 
 .service-type:last-child {
-  background: url(img/services/presentation.png) no-repeat;
+  background: url(../img/services/presentation.png) no-repeat;
 }
 
 .service-button-yellow {
@@ -378,7 +376,7 @@ img {
 /* Description */
 
 .description {
-  background: url(img/nerds-festive.png) no-repeat;
+  background: url(../img/nerds-festive.png) no-repeat;
 }
 
 .description .lead {
@@ -534,7 +532,7 @@ img {
 }
 
 .card img::before {
-  background: url(img/card-plank.svg) no-repeat;
+  background: url(../img/card-plank.svg) no-repeat;
   opacity: 0.12;
 }
 
