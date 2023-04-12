@@ -135,6 +135,17 @@ img {
   height: auto;
 }
 
+/* Header */
+.page-header {
+  margin: 0;
+  padding: 49px 0 78px 0;
+  background-color: var(--basic-extra-light);
+}
+
+.index-page .page-header {
+  padding-bottom: 0;
+}
+
 /* Main navigation */
 
 .main-navigation {
@@ -142,7 +153,6 @@ img {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: var(--basic-extra-light);
 }
 
 .main-navigation-logo[href]:hover {
@@ -297,10 +307,15 @@ img {
 .slider {
   background-color: var(--basic-extra-light);
 }
+
 .slider-slides {
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.slide {
+  margin: 0;
 }
 
 .slider .lead {
@@ -579,4 +594,70 @@ img {
 .pagination-button.current-button {
   background-color: var(--basic-white);
   border: 3px solid var(--pagination-border);
+}
+
+
+/* Сеточные стили */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.page-navigation {
+  justify-self: center;
+}
+
+.user-cart {
+  justify-self: right;
+}
+
+/* Стилизация 2 */
+
+.page-navigation {
+  display: flex;
+  gap: 45px;
+}
+
+/* Временные стили */
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.page-header {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+main {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+section {
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  outline-offset: -5px;
 }
