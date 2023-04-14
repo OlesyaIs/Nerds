@@ -316,25 +316,39 @@ img {
 
 .slide {
   margin: 0;
+  padding-top: 78px;
+  padding-bottom: 80px;
+  min-height: 431px;
+  box-sizing: border-box;
 }
 
-.slider .lead {
+.slide:first-child {
+  background: url(../img/slider/smartphones.png) no-repeat;
+  background-position: right 0 top 0;
+}
+
+.slide:nth-child(2) {
+  background: url(../img/slider/monoblocks.png) no-repeat;
+  background-position: right 0 top 0;
+}
+
+.slide:last-child {
+  background: url(../img/slider/mobile-devices.png) no-repeat;
+  background-position: right 0 top 0;
+}
+
+.slide .lead {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(-basic-black);
 }
 
-.slide:first-child {
-  background: url(../img/slider/smartphones.png) no-repeat;
-}
-
-.slide:nth-child(2) {
-  background: url(../img/slider/monoblocks.png) no-repeat;
-}
-
-.slide:last-child {
-  background: url(../img/slider/mobile-devices.png) no-repeat;
+.slide p {
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 /* Services */
@@ -345,20 +359,30 @@ img {
   list-style: none;
 }
 
-.service-type h3 {
+.service-type {
+  width: 300px;
+}
+
+.service-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.service-type:first-child {
-  background: url(../img/services/laptop.png) no-repeat;
+.service-type:first-child .service-title::before {
+  content: url(../img/services/laptop.png);
 }
 
-.service-type:nth-child(2) {
-  background: url(../img/services/smartphones.png) no-repeat;
+.service-type:nth-child(2) .service-title::before{
+  content: url(../img/services/smartphones.png);
 }
+
+.service-type:last-child .service-title::before{
+  content: url(../img/services/presentation.png);
+}
+
+/* Service buttons */
 
 .service-button-green {
   background-color: var(--button-green);
@@ -370,10 +394,6 @@ img {
 
 .service-button-green:active {
   background-color: var(--button-green-active);
-}
-
-.service-type:last-child {
-  background: url(../img/services/presentation.png) no-repeat;
 }
 
 .service-button-yellow {
@@ -390,11 +410,8 @@ img {
 
 /* Description */
 
-.description {
-  background: url(../img/nerds-festive.png) no-repeat;
-}
-
 .description .lead {
+  margin: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -402,15 +419,21 @@ img {
 }
 
 .description .list-title {
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--basic-extra-dark);
 }
 
-.order-list {
+.orders-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.description-column-right .list-title::before {
+  content: url(../img/nerds-festive.png);
 }
 
 .principle-list dt {
@@ -435,7 +458,7 @@ img {
 
 /* Clients */
 
-.client-list {
+.clients-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -629,6 +652,42 @@ img {
   justify-self: right;
 }
 
+.slider-slides {
+  display: grid;
+  grid-template-columns: 1160px 1160px 1160px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 100px;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 660px 360px;
+  column-gap: 140px;
+}
+
+.description-column-right {
+  justify-items: center;
+  text-align: center;
+}
+
+.clients-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+ 
 /* Стилизация 2 */
 
 .page-navigation {
@@ -660,4 +719,14 @@ main {
 section {
   outline: 5px solid rgba(255, 0, 255, 0.7);
   outline-offset: -5px;
+}
+
+
+
+.active-slide {
+  order: -1;
+}
+
+.slide:not(.active-slide) {
+  display: none;
 }
