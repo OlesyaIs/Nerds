@@ -53,7 +53,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1160px;
+  min-width: 1240px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -68,16 +68,6 @@ h1, h2, h3, h4 , h5, h6 {
   margin: none;
   padding: none;
   color: var(-basic-black);
-}
-
-.main-title {
-  margin: 0;
-  padding: 0;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-  text-align: center;
-  background-color: var(--basic-extra-light);
 }
 
 a {
@@ -182,23 +172,65 @@ img {
   opacity: 0.3;
 }
 
+/* Main */
+
+.page-main {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+.main-title {
+  margin: 0;
+  padding: 72px 0 108px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--basic-extra-light);
+}
+
+.page main section {
+  margin-bottom: 80px;
+}
+
+.page main section:last-child {
+  margin-bottom: 0;
+}
+
 /* Footer */
 
 .main-footer {
+  margin-top: 80px;
   font-size: 16px;
   line-height: 18px;
+}
+
+.main-footer section:not(.footer-contacts) {
+  margin-bottom: 68px;
 }
 
 /* Footer map */
 
 .footer-map {
-
-  background-image: url(../img/map.png) no-repeat;
+  margin: 0;
+  min-height: 416px;
+  background: url(../img/map.png) no-repeat;
+  background-size: cover;
 }
 
 /* Footer comtacts */
 
-.footer-contacts p {
+.contacts-wrapper {
+  padding: 50px;
+  width: 320px;
+}
+
+.contact-item {
+  margin: 0;
+}
+
+.contact-name {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -221,27 +253,47 @@ img {
   list-style: none;
 }
 
-.footer-discount h2 {
+.social-item a {
+  background-color: var(--basic-light);
+}
+
+/* Footer discount */
+
+.discount-CTA {
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
 
-/* Footer discount */
-
-.footer-discount p {
+.discount-description {
+  margin: 0;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: var(--special-dark);
 }
 
 /* Modal */
 
 .modal {
+  margin: 0 auto;
+  padding: 63px 100px 84px;
   font-size: 16px;
   line-height: 18px;
   background-color:var(--basic-white);
   box-shadow: 0px 20px 40px var(--basic-black-opacity);
+}
+
+.appeal-modal {
+  width: 700px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
 }
 
 .appeal-item label {
@@ -302,6 +354,7 @@ img {
 }
 
 /* Index */
+
 /* Slider */
 
 .slider {
@@ -364,6 +417,7 @@ img {
 }
 
 .service-title {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -408,9 +462,13 @@ img {
   background-color: var(--button-yellow-active);
 }
 
-/* Description */
+/* about */
 
-.description .lead {
+.page-main .about {
+  margin-bottom: 73px;
+}
+
+.about .lead {
   margin: 0;
   font-size: 45px;
   line-height: 45px;
@@ -418,7 +476,7 @@ img {
   color: var(-basic-black);
 }
 
-.description .list-title {
+.about .list-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -432,7 +490,7 @@ img {
   list-style: none;
 }
 
-.description-column-right .list-title::before {
+.about-column-right .list-title::before {
   content: url(../img/nerds-festive.png);
 }
 
@@ -634,7 +692,8 @@ img {
 
 .container {
   width: 1160px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-navigation {
@@ -663,13 +722,13 @@ img {
   column-gap: 100px;
 }
 
-.description {
+.about {
   display: grid;
   grid-template-columns: 660px 360px;
   column-gap: 140px;
 }
 
-.description-column-right {
+.about-column-right {
   justify-items: center;
   text-align: center;
 }
@@ -684,8 +743,18 @@ img {
 
 .footer-social {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 260px 660px;
   gap: 40px;
+}
+
+.appeal-form {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+}
+
+.appeal-item-text {
+  grid-column: span 2;
 }
  
 /* Стилизация 2 */
@@ -700,28 +769,6 @@ img {
 .visually-hidden {
   display: none;
 }
-
-.container {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
-
-.page-header {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
-}
-
-main {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
-section {
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
-}
-
-
 
 .active-slide {
   order: -1;
