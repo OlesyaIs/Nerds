@@ -31,7 +31,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="page-main">
       <h1 class="main-title visually-hidden">Интернет-магазин Nёrd's</h1>
       <section class="slider">
         <div class="container">
@@ -160,12 +160,6 @@
     <footer class="main-footer">
       <section class="footer-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img
-          class="map-placeholder"
-          src="img/map.png"
-          width="1440"
-          height="416"
-          alt="Расположение NЁRDS DESIGN STUDIO"/>
         <!--Здесь будет карта-->
       </section>
 
@@ -173,7 +167,7 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <p>NЁRDS DESIGN STUDIO</p>
         <address class="footer-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a><br>
         <a class="button contacts-button">Напишите нам</a>
       </section>
 
@@ -214,8 +208,8 @@
     </footer>
 
     <section class="modal appeal">
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="modal-title appeal-title">Напишите нам</h2>
+      <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="appeal-item">
           <label>
             Ваше имя:<br />
@@ -228,7 +222,7 @@
             <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
           </label>
         </p>
-        <p class="appeal-item">
+        <p class="appeal-item appeal-item-text">
           <label>
             Текст письма:<br />
             <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме">

@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
+
     <header class="page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="main-navigation-logo" href="index.html">
           <img src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"/></a>
         <ul class="page-navigation">
@@ -28,29 +29,23 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="page-main"></main>
 
     <footer class="main-footer">
       <section class="footer-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img
-          class="map-placeholder"
-          src="img/map.png"
-          width="1440"
-          height="416"
-          alt="Расположение NЁRDS DESIGN STUDIO"/>
         <!--Здесь будет карта-->
       </section>
 
-      <section class="footer-contacts">
+      <section class="footer-contacts container">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p>NЁRDS DESIGN STUDIO</p>
         <address class="footer-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a><br>
         <a class="button contacts-button">Напишите нам</a>
       </section>
 
-      <section class="footer-social">
+      <section class="footer-social container">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="socials-list">
           <li class="social-item">
@@ -99,8 +94,8 @@
     </footer>
 
     <section class="modal appeal">
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="modal-title appeal-title">Напишите нам</h2>
+      <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="appeal-item">
           <label>
             Ваше имя:<br />

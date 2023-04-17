@@ -53,7 +53,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1160px;
+  min-width: 1240px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -68,6 +68,11 @@ h1, h2, h3, h4 , h5, h6 {
   margin: none;
   padding: none;
   color: var(-basic-black);
+}
+
+.page-main {
+  margin: 0;
+  padding: 0;
 }
 
 .main-title {
@@ -192,11 +197,19 @@ img {
 /* Footer map */
 
 .footer-map {
-
-  background-image: url(../img/map.png) no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 416px;
+  background: url(../img/map.png) no-repeat;
+  background-size: cover;
 }
 
-/* Footer comtacts */
+/* Footer contacts */
+
+.footer-contacts {
+  margin: 0;
+  padding: 0;
+}
 
 .footer-contacts p {
   font-size: 18px;
@@ -214,6 +227,11 @@ img {
 }
 
 /* Footer social */
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+}
 
 .socials-list {
   margin: 0;
@@ -238,10 +256,22 @@ img {
 /* Modal */
 
 .modal {
+  margin: 0 auto 0;
+  padding: 63px 100px 84px;
+  width: 960px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   background-color:var(--basic-white);
   box-shadow: 0px 20px 40px var(--basic-black-opacity);
+}
+
+.modal-title {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
 }
 
 .appeal-item label {
@@ -687,6 +717,16 @@ img {
   grid-template-columns: 260px 1fr;
   gap: 40px;
 }
+
+.appeal-form {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+}
+
+.appeal-item-text {
+  grid-column: span 2;
+}
  
 /* Стилизация 2 */
 
@@ -701,32 +741,15 @@ img {
   display: none;
 }
 
-.container {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
-
-.page-header {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
-}
-
-main {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
-section {
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
-}
-
-
-
 .active-slide {
   order: -1;
 }
 
 .slide:not(.active-slide) {
   display: none;
+}
+
+.page-main {
+  outline: 5px solid rgba(100, 100, 100, 0.7);
+  outline-offset: -5px;
 }
