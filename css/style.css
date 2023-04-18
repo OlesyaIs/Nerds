@@ -143,12 +143,8 @@ img {
 /* Header */
 .page-header {
   margin: 0;
-  padding: 49px 0 78px 0;
+  padding: 49px 0 0;
   background-color: var(--basic-extra-light);
-}
-
-.index-page .page-header {
-  padding-bottom: 0;
 }
 
 /* Main navigation */
@@ -204,17 +200,11 @@ img {
   background-color: var(--basic-extra-light);
 }
 
-.page main section {
-  margin-bottom: 80px;
-}
-
-.page main section:last-child {
-  margin-bottom: 0;
-}
-
 /* Footer */
 
 .main-footer {
+  margin-top: 80px;
+  padding-bottom: 68px;
   font-size: 16px;
   line-height: 18px;
 }
@@ -223,6 +213,7 @@ img {
 
 .footer-map {
   margin: 0;
+  margin-bottom: 68px;
   padding: 0;
   min-height: 416px;
   background: url(../img/map.png) no-repeat;
@@ -234,6 +225,7 @@ img {
 .footer-contacts {
   margin: 0;
   padding: 0;
+  background-color: var(--basic-white);
 }
 
 .footer-contacts p {
@@ -255,6 +247,7 @@ img {
 
 .footer-social {
   margin: 0;
+  margin-bottom: 68px;
   padding: 0;
 }
 
@@ -264,15 +257,22 @@ img {
   list-style: none;
 }
 
-.footer-discount h2 {
+.social-item {
+  background-color: var(--basic-light);
+}
+
+/* Footer discount */
+
+.discount-CTA {
+  margin-bottom: 9px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
 
-/* Footer discount */
-
-.footer-discount p {
+.discount-description {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 22px;
   color: var(--special-dark);
@@ -357,6 +357,15 @@ img {
 }
 
 /* Index */
+
+.index-page .page-main section {
+  margin-bottom: 80px;
+}
+
+.index-page .page-main section:last-child {
+  margin-bottom: 0;
+}
+
 /* Slider */
 
 .slider {
@@ -463,9 +472,9 @@ img {
   background-color: var(--button-yellow-active);
 }
 
-/* Description */
+/* About */
 
-.description .lead {
+.about .lead {
   margin: 0;
   font-size: 45px;
   line-height: 45px;
@@ -473,7 +482,7 @@ img {
   color: var(-basic-black);
 }
 
-.description .list-title {
+.about .list-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -487,7 +496,7 @@ img {
   list-style: none;
 }
 
-.description-column-right .list-title::before {
+.about-column-right .list-title::before {
   content: url(../img/nerds-festive.png);
 }
 
@@ -689,7 +698,10 @@ img {
 
 .container {
   width: 1160px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .main-navigation {
@@ -718,13 +730,13 @@ img {
   column-gap: 100px;
 }
 
-.description {
+.about {
   display: grid;
   grid-template-columns: 660px 360px;
   column-gap: 140px;
 }
 
-.description-column-right {
+.about-column-right {
   justify-items: center;
   text-align: center;
 }
@@ -741,6 +753,12 @@ img {
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 40px;
+}
+
+.socials-list {
+  display: flex;
+  gap: 9px;
+  align-items: center;
 }
 
 .appeal-form {
