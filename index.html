@@ -77,9 +77,9 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services container">
         <h2 class="visually-hidden">Продукты</h2>
-        <ul class="services-list container">
+        <ul class="services-list">
           <li class="service-type">
             <h3 class="service-title">Веб-сайты</h3>
             <p class="service-description">
@@ -104,8 +104,8 @@
         </ul>  
       </section>
 
-      <section class="description container">
-        <div class="description-column description-column-left">
+      <section class="about container">
+        <div class="about-column about-column-left">
           <h2 class="visually-hidden">О студии</h2>
           <p class="lead">
             Мы — маленькая, но гордая <br>
@@ -123,7 +123,7 @@
             <li class="order-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="description-column description-column-right">
+        <div class="about-column about-column-right">
           <h3 class="list-title">с 2004 года Любим точность во всем:</h3>
           <dl class="principle-list">
             <dt>146<span class="percent">%</span></dt>
@@ -158,17 +158,20 @@
     </main>
 
     <footer class="main-footer">
+
       <section class="footer-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <!--Здесь будет карта-->
       </section>
 
       <section class="footer-contacts container">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <address class="footer-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a><br>
-        <a class="button contacts-button">Напишите нам</a>
+        <div class="contacts-wrapper">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="contact-item contact-name">NЁRDS DESIGN STUDIO</p>
+          <p class="contact-item"><address class="footer-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address></p>
+          <p class="contact-item"><a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a></p>
+          <a class="button contacts-button">Напишите нам</a>
+        </div>
       </section>
 
       <section class="footer-social container">
@@ -193,22 +196,22 @@
             </a>
           </li>
         </ul>
-        <div class="footer-discount">
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="social-discount">
+          <h2 class="discount-CTA">Давайте дружить, это выгодно!</h2>
+          <p class="discount-description">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
 
-      <p class="footer-copy">
+      <section class="footer-copy container">
         Репозиторий создан для обучения на профессиональном онлайн‑курсе 
         «<a class="button copy-button" href="https://htmlacademy.ru/intensive/htmlcss">
           HTML и CSS. Профессиональная вёрстка сайтов
         </a>».
-      </p>
+      </section>
     </footer>
 
-    <section class="modal appeal">
-      <h2 class="modal-title appeal-title">Напишите нам</h2>
+    <section class="modal appeal-modal">
+      <h2 class="modal-title">Напишите нам</h2>
       <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="appeal-item">
           <label>
@@ -219,8 +222,7 @@
         <p class="appeal-item">
           <label>
             Ваш email:<br />
-            <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
-          </label>
+            <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />            </label>
         </p>
         <p class="appeal-item appeal-item-text">
           <label>

@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-
     <header class="page-header">
-      <nav class="main-navigation container">
+      <nav class="main-navigation">
         <a class="main-navigation-logo" href="index.html">
           <img src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"/></a>
         <ul class="page-navigation">
@@ -29,20 +28,23 @@
       </nav>
     </header>
 
-    <main class="page-main"></main>
+    <main></main>
 
     <footer class="main-footer">
+
       <section class="footer-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <!--Здесь будет карта-->
       </section>
 
       <section class="footer-contacts container">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <address class="footer-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a><br>
-        <a class="button contacts-button">Напишите нам</a>
+        <div class="contacts-wrapper">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="contact-item contact-name">NЁRDS DESIGN STUDIO</p>
+          <p class="contact-item"><address class="footer-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address></p>
+          <p class="contact-item"><a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a></p>
+          <a class="button contacts-button">Напишите нам</a>
+        </div>
       </section>
 
       <section class="footer-social container">
@@ -50,76 +52,62 @@
         <ul class="socials-list">
           <li class="social-item">
             <a href="#">
-              <span class="social">вконтакте</span>
-              <img
-                src="img/social-icons/vk.svg"
-                width="26"
-                height="15"
-                alt="VK"/>
+              <span class="social visually-hidden">вконтакте</span>
+              <img src="img/social-icons/vk.svg" width="26" height="15" alt="VK"/>
             </a>
           </li>
           <li class="social-item">
             <a href="#">
-              <span class="social">фейсбук</span>
-              <img
-                src="img/social-icons/fb.svg"
-                width="12"
-                height="22"
-                alt="Facebook"/>
+              <span class="social visually-hidden">фейсбук</span>
+              <img src="img/social-icons/fb.svg" width="12" height="22" alt="Facebook"/>
             </a>
           </li>
           <li class="social-item">
             <a href="#">
-              <span class="social">инстаграм</span>
-              <img
-                src="img/social-icons/insta.svg"
-                width="21"
-                height="21"
-                alt="Instagram"/>
+              <span class="social visually-hidden">инстаграм</span>
+              <img src="img/social-icons/insta.svg" width="21" height="21" alt="Instagram"/>
             </a>
           </li>
         </ul>
-        <div class="footer-discount">
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="social-discount">
+          <h2 class="discount-CTA">Давайте дружить, это выгодно!</h2>
+          <p class="discount-description">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
 
-      <p class="footer-copy">
+      <section class="footer-copy container">
         Репозиторий создан для обучения на профессиональном онлайн‑курсе 
         «<a class="button copy-button" href="https://htmlacademy.ru/intensive/htmlcss">
           HTML и CSS. Профессиональная вёрстка сайтов
         </a>».
-      </p>
+      </section>
     </footer>
 
-    <section class="modal appeal">
-      <h2 class="modal-title appeal-title">Напишите нам</h2>
+    <section class="modal appeal-modal">
+      <h2 class="modal-title">Напишите нам</h2>
       <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="appeal-item">
           <label>
             Ваше имя:<br />
-            <input type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" />
+            <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" />
           </label>
         </p>
         <p class="appeal-item">
           <label>
             Ваш email:<br />
-            <input type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
-          </label>
+            <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />            </label>
         </p>
-        <p class="appeal-item">
+        <p class="appeal-item appeal-item-text">
           <label>
             Текст письма:<br />
-            <textarea name="appeal-field appeal-text" rows="3">
-              В свободной форме
+            <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме">
             </textarea>
           </label>
         </p>
         <button class="button modal-button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button"></button>
-    </section>
+    </section> 
 
   </body>
 </html>
