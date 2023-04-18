@@ -755,12 +755,6 @@ img {
   gap: 40px;
 }
 
-.socials-list {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-}
-
 .appeal-form {
   display: grid;
   grid-template-columns: 360px 360px;
@@ -769,6 +763,20 @@ img {
 
 .appeal-item-text {
   grid-column: span 2;
+}
+
+/* Catalog page */
+
+.catalog-main-layout {
+  display: grid;
+  grid-template-columns: 300px 760px;
+  grid-template-rows: auto 1fr;
+  column-gap: 140px;
+}
+
+.filters {
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
  
 /* Стилизация 2 */
@@ -790,4 +798,21 @@ img {
 
 .slide:not(.active-slide) {
   display: none;
+}
+
+.socials-list {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-parameter {
+  display: flex;
+  gap: 25px;
+  margin-right: 47px;
 }
