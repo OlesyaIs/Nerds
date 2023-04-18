@@ -70,6 +70,21 @@ h1, h2, h3, h4 , h5, h6 {
   color: var(-basic-black);
 }
 
+.page-main {
+  margin: 0;
+  padding: 0;
+}
+
+.main-title {
+  margin: 0;
+  padding: 0;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--basic-extra-light);
+}
+
 a {
   font: inherit;
   text-decoration: none;
@@ -200,36 +215,28 @@ img {
 /* Footer */
 
 .main-footer {
-  margin-top: 80px;
   font-size: 16px;
   line-height: 18px;
-}
-
-.main-footer section:not(.footer-contacts) {
-  margin-bottom: 68px;
 }
 
 /* Footer map */
 
 .footer-map {
   margin: 0;
+  padding: 0;
   min-height: 416px;
   background: url(../img/map.png) no-repeat;
   background-size: cover;
 }
 
-/* Footer comtacts */
+/* Footer contacts */
 
-.contacts-wrapper {
-  padding: 50px;
-  width: 320px;
-}
-
-.contact-item {
+.footer-contacts {
   margin: 0;
+  padding: 0;
 }
 
-.contact-name {
+.footer-contacts p {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -246,53 +253,50 @@ img {
 
 /* Footer social */
 
+.footer-social {
+  margin: 0;
+  padding: 0;
+}
+
 .socials-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.social-item a {
-  background-color: var(--basic-light);
-}
-
-/* Footer discount */
-
-.discount-CTA {
-  margin: 0;
+.footer-discount h2 {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.discount-description {
-  margin: 0;
+/* Footer discount */
+
+.footer-discount p {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
   color: var(--special-dark);
 }
 
 /* Modal */
 
 .modal {
-  margin: 0 auto;
+  margin: 0 auto 0;
   padding: 63px 100px 84px;
+  width: 960px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   background-color:var(--basic-white);
   box-shadow: 0px 20px 40px var(--basic-black-opacity);
 }
 
-.appeal-modal {
-  width: 700px;
-}
-
 .modal-title {
   margin: 0;
+  padding: 0;
   font-size: 45px;
-  line-height: 53px;
   font-weight: 700;
+  line-height: 53px;
 }
 
 .appeal-item label {
@@ -353,7 +357,6 @@ img {
 }
 
 /* Index */
-
 /* Slider */
 
 .slider {
@@ -416,7 +419,6 @@ img {
 }
 
 .service-title {
-  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -461,13 +463,9 @@ img {
   background-color: var(--button-yellow-active);
 }
 
-/* about */
+/* Description */
 
-.page-main .about {
-  margin-bottom: 73px;
-}
-
-.about .lead {
+.description .lead {
   margin: 0;
   font-size: 45px;
   line-height: 45px;
@@ -475,7 +473,7 @@ img {
   color: var(-basic-black);
 }
 
-.about .list-title {
+.description .list-title {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -489,7 +487,7 @@ img {
   list-style: none;
 }
 
-.about-column-right .list-title::before {
+.description-column-right .list-title::before {
   content: url(../img/nerds-festive.png);
 }
 
@@ -691,8 +689,7 @@ img {
 
 .container {
   width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -721,13 +718,13 @@ img {
   column-gap: 100px;
 }
 
-.about {
+.description {
   display: grid;
   grid-template-columns: 660px 360px;
   column-gap: 140px;
 }
 
-.about-column-right {
+.description-column-right {
   justify-items: center;
   text-align: center;
 }
@@ -742,7 +739,7 @@ img {
 
 .footer-social {
   display: grid;
-  grid-template-columns: 260px 660px;
+  grid-template-columns: 260px 1fr;
   gap: 40px;
 }
 
@@ -775,4 +772,9 @@ img {
 
 .slide:not(.active-slide) {
   display: none;
+}
+
+.page-main {
+  outline: 5px solid rgba(100, 100, 100, 0.7);
+  outline-offset: -5px;
 }
