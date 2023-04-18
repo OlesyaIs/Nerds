@@ -773,8 +773,3 @@ img {
 .slide:not(.active-slide) {
   display: none;
 }
-
-.page-main {
-  outline: 5px solid rgba(100, 100, 100, 0.7);
-  outline-offset: -5px;
-}
