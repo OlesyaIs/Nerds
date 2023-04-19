@@ -40,9 +40,10 @@
   
           <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-group filter-group-price">
-              <legend class="filter-group-title">Стоимость</legend>
-              <p>
+              <legend class="filter-group-title filter-price-title">Стоимость</legend>
+              <p class="filter-option">
                 <input
+                  class="price-input"
                   type="range"
                   name="priceslider"
                   step="1"
@@ -106,12 +107,12 @@
         <section class="sort">
           <h2 class="sort-group-title">Сортировать:</h2>
           <ul class="sort-parameter">
-            <li class="sort-item"><a href="#">По цене</a></li>
+            <li class="sort-item sort-active"><a href="#">По цене</a></li>
             <li class="sort-item"><a href="#">По типу</a></li>
             <li class="sort-item"><a href="#">По названию</a></li>
           </ul>
           <ul class="sort-direction">
-            <li class="sort-direction-item sort-down"><a href="#"></a></li>
+            <li class="sort-direction-item sort-down sort-active"><a href="#"></a></li>
             <li class="sort-direction-item sort-up"><a href="#"></a></li>
           </ul>
         </section>
