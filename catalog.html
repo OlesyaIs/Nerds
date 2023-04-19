@@ -32,7 +32,9 @@
     </header>
 
     <main class="page-main">
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
+      <div class="title-container">
+        <h1 class="main-title container">Магазин готовых шаблонов</h1>
+      </div>
 
       <div class="container catalog-main-layout">
         <section class="filters">
@@ -103,109 +105,111 @@
             <button class="button-grey filter-button" type="submit">Показать</button>
           </form>
         </section>
-  
-        <section class="sort">
-          <h2 class="sort-group-title">Сортировать:</h2>
-          <ul class="sort-parameter">
-            <li class="sort-item sort-active"><a href="#">По цене</a></li>
-            <li class="sort-item"><a href="#">По типу</a></li>
-            <li class="sort-item"><a href="#">По названию</a></li>
-          </ul>
-          <ul class="sort-direction">
-            <li class="sort-direction-item sort-down sort-active"><a href="#"></a></li>
-            <li class="sort-direction-item sort-up"><a href="#"></a></li>
-          </ul>
-        </section>
-  
-        <section class="catalog">
-          <h2 class="visually-hidden">Список шаблонов</h2>
-          <ul class="cards-list">
-            <li class="card">
-              <img
-                src="img/catalog/sedona.png"
-                width="358"
-                height="578"
-                alt="Скриншот информационного сайта"
-              />
-              <div class="card-popup visually-hidden">
-                <h3><a class="cards-link" href="blank.html">Sedona</a></h3>
-                <p>Информационный сайт для туристов</p>
-                <a class="button card-button" href="blank.html">9 900 ₽</a>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="img/catalog/pink.png"
-                width="358"
-                height="578"
-                alt="Скриншот продуктового лендинга приложения"
-              />
-              <div class="card-popup visually-hidden">
-                <h3><a class="cards-link" href="blank.html">Pink App</a></h3>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="button card-button" href="blank.html">9 900 ₽</a>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="img/catalog/borodinski.png"
-                width="358"
-                height="578"
-                alt="Скриншот сайта салона красоты"
-              />
-              <div class="card-popup visually-hidden">
-                <h3><a class="cards-link" href="blank.html">Barbershop</a></h3>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
-                <a class="button card-button" href="blank.html">9 900 ₽</a>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="img/catalog/mishka.png"
-                width="358"
-                height="578"
-                alt="Скриншот интернет-магазина"
-              />
-              <div class="card-popup visually-hidden">
-                <h3><a class="cards-link" href="blank.html">Mishka</a></h3>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a class="button card-button" href="blank.html">9 900 ₽</a>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="img/catalog/a-plus.png"
-                width="358"
-                height="578"
-                alt="Скриншот лендинга курсов"
-              />
-              <div class="card-popup visually-hidden">
-                <h3><a class="cards-link" href="blank.html">A Plus</a></h3>
-                <p>Лендинг курсов повышения квалификации</p>
-                <a class="button card-button" href="blank.html">9 900 ₽</a>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="img/catalog/kvast.png"
-                width="358"
-                height="578"
-                alt="Скриншот промо-сайта"
-              />
-              <div class="card-popup visually-hidden">
-                <h3><a class="cards-link" href="blank.html">Кваст</a></h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="button card-button" href="blank.html">9 900 ₽</a>
-              </div>
-            </li>
-          </ul> 
-          <ul class="pagination">
-            <li><a class="button-grey pagination-button current-button">1</a></li>
-            <li><a class="button-grey pagination-button" href="#">2</a></li>
-            <li><a class="button-grey pagination-button" href="#">3</a></li>
-            <li><a class="button-grey pagination-button pagination-button-next" href="#">Следующая</a></li>
-          </ul>
-        </section>
+        
+        <div class="main-content">
+          <section class="sort">
+            <h2 class="sort-group-title">Сортировать:</h2>
+            <ul class="sort-parameter">
+              <li class="sort-item sort-active"><a href="#">По цене</a></li>
+              <li class="sort-item"><a href="#">По типу</a></li>
+              <li class="sort-item"><a href="#">По названию</a></li>
+            </ul>
+            <ul class="sort-direction">
+              <li class="sort-direction-item sort-down sort-active"><a href="#"></a></li>
+              <li class="sort-direction-item sort-up"><a href="#"></a></li>
+            </ul>
+          </section>
+    
+          <section class="catalog">
+            <h2 class="visually-hidden">Список шаблонов</h2>
+            <ul class="cards-list">
+              <li class="card">
+                <img
+                  src="img/catalog/sedona.png"
+                  width="358"
+                  height="578"
+                  alt="Скриншот информационного сайта"
+                />
+                <div class="card-popup visually-hidden">
+                  <h3><a class="cards-link" href="blank.html">Sedona</a></h3>
+                  <p>Информационный сайт для туристов</p>
+                  <a class="button card-button" href="blank.html">9 900 ₽</a>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="img/catalog/pink.png"
+                  width="358"
+                  height="578"
+                  alt="Скриншот продуктового лендинга приложения"
+                />
+                <div class="card-popup visually-hidden">
+                  <h3><a class="cards-link" href="blank.html">Pink App</a></h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="button card-button" href="blank.html">9 900 ₽</a>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="img/catalog/borodinski.png"
+                  width="358"
+                  height="578"
+                  alt="Скриншот сайта салона красоты"
+                />
+                <div class="card-popup visually-hidden">
+                  <h3><a class="cards-link" href="blank.html">Barbershop</a></h3>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="button card-button" href="blank.html">9 900 ₽</a>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="img/catalog/mishka.png"
+                  width="358"
+                  height="578"
+                  alt="Скриншот интернет-магазина"
+                />
+                <div class="card-popup visually-hidden">
+                  <h3><a class="cards-link" href="blank.html">Mishka</a></h3>
+                  <p>Интернет-магазин вязаных игрушек</p>
+                  <a class="button card-button" href="blank.html">9 900 ₽</a>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="img/catalog/a-plus.png"
+                  width="358"
+                  height="578"
+                  alt="Скриншот лендинга курсов"
+                />
+                <div class="card-popup visually-hidden">
+                  <h3><a class="cards-link" href="blank.html">A Plus</a></h3>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <a class="button card-button" href="blank.html">9 900 ₽</a>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="img/catalog/kvast.png"
+                  width="358"
+                  height="578"
+                  alt="Скриншот промо-сайта"
+                />
+                <div class="card-popup visually-hidden">
+                  <h3><a class="cards-link" href="blank.html">Кваст</a></h3>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <a class="button card-button" href="blank.html">9 900 ₽</a>
+                </div>
+              </li>
+            </ul> 
+            <ul class="pagination">
+              <li><a class="button-grey pagination-button current-button">1</a></li>
+              <li><a class="button-grey pagination-button" href="#">2</a></li>
+              <li><a class="button-grey pagination-button" href="#">3</a></li>
+              <li><a class="button-grey pagination-button pagination-button-next" href="#">Следующая</a></li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
 

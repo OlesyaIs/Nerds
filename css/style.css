@@ -191,13 +191,16 @@ img {
   border: 0px;
 }
 
-.main-title {
+.title-container {
   padding: 72px 0 108px;
+  background-color: var(--basic-extra-light);
+}
+
+.main-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   text-align: center;
-  background-color: var(--basic-extra-light);
 }
 
 /* Footer */
@@ -293,10 +296,19 @@ img {
 
 .modal-title {
   margin: 0;
+  margin-bottom: 37px;
   padding: 0;
   font-size: 45px;
   font-weight: 700;
   line-height: 53px;
+}
+
+.appeal-form {
+  margin: 0;
+}
+
+.appeal-item {
+  margin: 0;
 }
 
 .appeal-item label {
@@ -340,6 +352,10 @@ img {
 .appeal-field:invalid {
   color: var(--modal-invalid);
   border: 2px solid var(--modal-invalid);
+}
+
+.modal-button {
+  margin-top: 47px;
 }
 
 .modal-close {
@@ -619,14 +635,31 @@ img {
 
 /* Sort */
 
+.sort {
+  margin-bottom: 48px;
+}
+
 .sort-group-title {
+  margin-right: 25px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.sort-parameter,
+.sort-parameter {
+  margin: 0;
+  margin-right: 47px;
+  margin-left: auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  list-style: none;
+}
+
 .sort-direction {
   margin: 0;
   padding: 0;
@@ -714,6 +747,7 @@ img {
 
 .pagination {
   margin: 0;
+  margin-top: 54px;
   padding: 0;
   list-style: none;
 }
@@ -813,6 +847,7 @@ img {
   display: grid;
   grid-template-columns: 360px 360px;
   column-gap: 40px;
+  row-gap: 34px;
 }
 
 .appeal-item-text {
@@ -824,14 +859,14 @@ img {
 .catalog-main-layout {
   display: grid;
   grid-template-columns: 300px 760px;
-  grid-template-rows: auto 1fr;
   column-gap: 140px;
-  row-gap: 48px;
 }
 
-.filters {
-  grid-column: 1/2;
-  grid-row: 1/3;
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
 }
  
 /* Стилизация 2 */
@@ -839,11 +874,33 @@ img {
 .page-navigation {
   display: flex;
   gap: 45px;
+  flex-wrap: wrap;
+}
+
+.socials-list {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sort-parameter {
+  display: flex;
+  gap: 25px;
+  margin-right: 47px;
+  flex-wrap: wrap;
 }
 
 .pagination {
   display: flex;
   gap: 11px;
+  flex-wrap: wrap;
 }
 
 /* Временные стили */
@@ -858,33 +915,4 @@ img {
 
 .slide:not(.active-slide) {
   display: none;
-}
-
-.socials-list {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-}
-
-.sort {
-  display: flex;
-  justify-content: space-between;
-}
-
-.sort-parameter {
-  display: flex;
-  gap: 25px;
-  margin-right: 47px;
-}
-
-. {
-  outline: 5px solid rgba(100, 0, 150, 0.7);
-}
-
-. {
-  outline: 5px solid rgba(0, 150, 150, 0.7);
-}
-
-. {
-  outline: 5px solid rgba(150, 150, 0, 0.7);
 }
