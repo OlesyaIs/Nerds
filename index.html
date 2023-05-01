@@ -19,7 +19,7 @@
     <header class="page-header">
       <nav class="main-navigation container">
         <a class="main-navigation-logo">
-          <img src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"/>
+          <img class="main-navigation-img" src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"/>
         </a>
         <ul class="page-navigation">
           <li><a class="page-navigation-item" href="blank.html">Студия</a></li>
@@ -32,29 +32,29 @@
     </header>
 
     <main class="page-main">
-      <div class="container title-container">
+      <div class="container title-container visually-hidden">
         <h1 class="main-title visually-hidden">Интернет-магазин Nёrd's</h1>
       </div>
       <section class="slider">
         <div class="container">
           <ul class="slider-slides">
-            <li class="slide">
+            <li class="slide active-slide">
               <h2 class="visually-hidden">Преимущества</h2>
-              <p class="lead">Долго, дорого, <br>
+              <p class="lead slide-lead">Долго, дорого,<br>
                 скрупулезно.</p>
-              <p>
-                Математически выверенный дизайн <br>
+              <p class="slide-description">
+                Математически выверенный дизайн<br>
                 для вашего сайта или мобильного
                 приложения.
               </p>
               <a class="button slider-button" href="blank.html">Узнать больше</a>
             </li>
-            <li class="slide active-slide">
+            <li class="slide">
               <h2 class="visually-hidden">Математический подход</h2>
-              <p class="lead">Любим математику <br>
+              <p class="lead slide-lead">Любим математику<br>
                 как никто другой</p>
-              <p>
-                Никакого креатива, только математические формулы <br>
+              <p class="slide-description">
+                Никакого креатива, только математические формулы<br>
                 для расчета идеальных
                 пропорций
               </p>
@@ -62,10 +62,11 @@
             </li>
             <li class="slide">
               <h2 class="visually-hidden">Рабочий график</h2>
-              <p class="lead">Только ночь, <br>
+              <p class="lead slide-lead">Только ночь,<br>
                 только хардкор</p>
-              <p>
-                Работать днем, как все? Мы против этого. Ближе к полуночи работа
+              <p class="slide-description">
+                Работать днем, как все? Мы против этого.<br>
+                Ближе к полуночи работа
                 только начинается.
               </p>
               <a class="button slider-button" href="blank.html">Узнать больше</a>
@@ -107,26 +108,27 @@
       </section>
 
       <section class="about container">
-        <div class="about-column about-column-left">
+        <div class="about-lead-paragraph">
           <h2 class="visually-hidden">О студии</h2>
-          <p class="lead">
+          <p class="lead about-lead">
             Мы — маленькая, но гордая <br>
             дизайн-студия из Краснодара.
           </p>
-          <p>
+          <p class="about-description">
             Исповедуем принципы минимализма и чистоты. Ставим математический
             расчет превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-  
-          <h3 class="list-title">Выполняем заказы на разработку:</h3>
+        </div>
+        <div class="about-column-left">
+          <h3 class="about-list-title orders-title">Выполняем заказы на разработку:</h3>
           <ul class="orders-list">
             <li class="order-item">Веб-сайтов любой сложности</li>
             <li class="order-item">Мобильных приложений для iOS и Android</li>
             <li class="order-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="about-column about-column-right">
-          <h3 class="list-title">с 2004 года Любим точность во всем:</h3>
+        <div class="about-column-right">
+          <h3 class="about-list-title principles-title">с 2004 года Любим точность во всем:</h3>
           <dl class="principle-list">
             <dt>146<span class="percent">%</span></dt>
             <dd>Уровень самоотдачи</dd>
@@ -178,19 +180,19 @@
         <ul class="socials-list">
           <li>
             <a class="social-item" href="#">
-              <span class="social visually-hidden">вконтакте</span>
+              <span class="social-name">вконтакте</span>
               <img src="img/social-icons/vk.svg" width="26" height="15" alt="VK"/>
             </a>
           </li>
           <li>
             <a class="social-item" href="#">
-              <span class="social visually-hidden">фейсбук</span>
+              <span class="social-name">фейсбук</span>
               <img src="img/social-icons/fb.svg" width="12" height="22" alt="Facebook"/>
             </a>
           </li>
           <li>
             <a class="social-item" href="#">
-              <span class="social visually-hidden">инстаграм</span>
+              <span class="social-name">инстаграм</span>
               <img src="img/social-icons/insta.svg" width="21" height="21" alt="Instagram"/>
             </a>
           </li>
@@ -203,7 +205,7 @@
 
       <section class="footer-copy container">
         Репозиторий создан для обучения на профессиональном онлайн‑курсе 
-        «<a class="button copy-button" href="https://htmlacademy.ru/intensive/htmlcss">
+        «<a class="inline-button copy-button" href="https://htmlacademy.ru/intensive/htmlcss">
           HTML и CSS. Профессиональная вёрстка сайтов
         </a>».
       </section>
@@ -212,13 +214,13 @@
     <section class="modal appeal">
       <h2 class="modal-title appeal-title">Напишите нам</h2>
       <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appeal-item">
+        <p class="appeal-item appeal-item-name">
           <label>
             Ваше имя:<br />
             <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" />
           </label>
         </p>
-        <p class="appeal-item">
+        <p class="appeal-item appeal-item-email">
           <label>
             Ваш email:<br />
             <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
