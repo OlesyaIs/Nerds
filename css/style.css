@@ -44,6 +44,8 @@
   --pagination-hover: #DFDFDF;
   --pagination-active: #D5D5D5;
   --pagination-border: #DBDBDB;
+  --pagination-shadow-opacity: rgba(0, 1, 1, 0.1);
+  --pagination-active-text: rgba(0, 0, 0, 0.3);
 
   --modal-basic: #D7DCDE;
   --modal-hover: #B4B9BB;
@@ -976,16 +978,20 @@ img {
 .card-content {
   display: flex;
   flex-direction: column;
-  background-color: var(--card-background);
+  width: 360px;
+  height: 580px;
   border: 1px solid var(--card-border);
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 6px 6px;
+  background-color: var(--card-background);
+  box-sizing: border-box;
 }
 
 .content-img {
   display: block;
-  width: 358px;
+  max-height: 580px;
   margin: 0 auto;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 5px 5px;
+  object-fit: cover;
 }
 
 .card-popup {
@@ -1005,11 +1011,8 @@ img {
 }
 
 .card:hover .card-content{
+  border: none;
   filter: drop-shadow(0px 6px 15px var(--card-shadow-opacity));
-}
-
-.card:hover img {
-  transform: scale(1.00558659);
 }
 
 .cards-link:hover {
@@ -1032,7 +1035,7 @@ img {
   gap: 11px;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: 54px;
+  margin-top: 25px;
   padding: 0;
   list-style: none;
 }
@@ -1051,19 +1054,32 @@ img {
   border-radius: 3px;
   border: none;
   box-sizing: border-box;
-}
 
-.pagination-button.current-button {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: var(--basic-white);
-  border: 3px solid var(--pagination-border);
+  /* transition-duration: 0.4s; */
 }
 
 .pagination-button-next {
   width: 240px;
 }
 
+.pagination-button.active-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--basic-white);
+  border: 3px solid var(--pagination-border);
+}
+
+.pagination-button:not(.active-button):hover {
+  background-color: var(--pagination-hover);
+  border: none;
+}
+
+.pagination-button:not(.active-button):active {
+  color: var(--pagination-active-text);
+  background-color: var(--pagination-active);
+  border: none;
+  box-shadow: inset 0px 3px 0px var(--pagination-shadow-opacity);
+}
 
 /* Сеточные стили */
 
