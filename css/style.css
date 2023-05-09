@@ -345,7 +345,7 @@ img {
 
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 40px;
+  column-gap: 140px;
   margin: 0;
   margin-bottom: 68px;
   padding: 0;
@@ -353,16 +353,28 @@ img {
 
 .socials-list {
   display: flex;
-  gap: 9px;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.social-item {
+/* .social-item {
+  margin-right: 9px;
+} */
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 81px;
+  margin: 0;
+  padding: 0;
   background-color: var(--basic-light);
+  border-radius: 50%;
 }
 
 .social-name {
