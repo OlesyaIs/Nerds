@@ -24,7 +24,7 @@
         <ul class="page-navigation">
           <li><a class="page-navigation-item" href="blank.html">Студия</a></li>
           <li><a class="page-navigation-item" href="blank.html">Клиенты</a></li>
-          <li><a class="page-navigation-item active-page">Магазин</a></li>
+          <li><a class="page-navigation-item active">Магазин</a></li>
           <li><a class="page-navigation-item" href="blank.html">Контакты</a></li>
         </ul>
         <a class="user-cart" href="blank.html">Корзина</a>
@@ -41,11 +41,14 @@
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
   
           <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+            
             <fieldset class="filter-group-price">
               <legend class="filter-group-title filter-price-title">Стоимость</legend>
               <div class="filter-option-price">
                 <div class="range-wrapper">
-                  <input class="price-range" type="range" name="priceslider" step="1" min="0" max="250000" value="150000"/>
+                  <div class="price-range">
+                    <div class="price-range-value"></div>
+                  </div>
                 </div>
                 <label class="price-label">
                   от:<input class="price-value" type="number" name="current-min" value="0"/>
@@ -59,40 +62,40 @@
             <fieldset class="filter-group filter-group-grid">
               <legend class="filter-group-title">Сетка:</legend>
               <p class="filter-option option-radio">
-                <input class="filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked />
-                <label for="filter-adaptive">Адаптивная</label>
+                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked/>
+                <label class="filter-label" for="filter-adaptive">Адаптивная</label>
               </p>
               <p class="filter-option option-radio">
-                <input class="filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix" />
-                <label for="filter-fix">Фиксированная</label>
+                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="fix" id="filter-fix" />
+                <label class="filter-label" for="filter-fix">Фиксированная</label>
               </p>
               <p class="filter-option option-radio">
-                <input class="filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber" />
-                <label for="filter-rubber">Резиновая</label>
+                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="rubber" id="filter-rubber" />
+                <label class="filter-label" for="filter-rubber">Резиновая</label>
               </p>
             </fieldset>
   
             <fieldset class="filter-group filter-group-features">
               <legend class="filter-group-title">Особенности:</legend>
               <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked />
-                <label for="filter-slider">Слайдер</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked />
+                <label class="filter-label" for="filter-slider">Слайдер</label>
               </p>
               <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages" />
-                <label for="filter-advantages">Блок преимуществ</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantages" id="filter-advantages" />
+                <label class="filter-label" for="filter-advantages">Блок преимуществ</label>
               </p>
               <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked />
-                <label for="filter-news">Новости</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked />
+                <label class="filter-label" for="filter-news">Новости</label>
               </p>
               <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery" />
-                <label for="filter-gallery">Галерея</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery" />
+                <label class="filter-label" for="filter-gallery">Галерея</label>
               </p>
               <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="busket" id="filter-busket" />
-                <label for="filter-busket">Корзина</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="busket" id="filter-busket" />
+                <label class="filter-label" for="filter-busket">Корзина</label>
               </p>
             </fieldset>
   
@@ -104,13 +107,21 @@
           <section class="sort">
             <h2 class="sort-group-title">Сортировать:</h2>
             <ul class="sort-parameter">
-              <li class="sort-item sort-active"><a href="#">По цене</a></li>
+              <li class="sort-item active"><a href="#">По цене</a></li>
               <li class="sort-item"><a href="#">По типу</a></li>
               <li class="sort-item"><a href="#">По названию</a></li>
             </ul>
             <ul class="sort-direction">
-              <li class="sort-direction-item sort-down sort-active"><a href="#"><span class="placeholder-text">down</span></a></li>
-              <li class="sort-direction-item sort-up"><a href="#"><span>up</span class="placeholder-text"></a></li>
+              <li class="sort-direction-item active">
+                <a class="sort-down" href="#">
+                  <span class="placeholder-text visually-hidden">down</span>
+                </a>
+              </li>
+              <li class="sort-direction-item">
+                <a class="sort-up" href="#">
+                  <span class="placeholder-text visually-hidden">up</span>
+                </a>
+              </li>
             </ul>
           </section>
 
@@ -243,34 +254,38 @@
         <!--Здесь будет карта-->
       </section>
 
+      <section class="footer-contacts">
+        <div class="contacts-container">
+          <div class="contacts-content">
+            <h2 class="visually-hidden">Контактная информация</h2>
+            <p class="footer-name">NЁRDS DESIGN STUDIO</p>
+            <address class="footer-address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</address>
+            <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a class="button contacts-button">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+      
       <div class="container">
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контактная информация</h2>
-          <p class="footer-name">NЁRDS DESIGN STUDIO</p>
-          <address class="footer-address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</address>
-          <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-          <a class="button contacts-button">Напишите нам</a>
-        </section>
-  
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="socials-list">
-            <li>
-              <a class="social-item" href="#">
-                <span class="social-name">вконтакте</span>
-                <img src="img/social-icons/vk.svg" width="26" height="15" alt="VK"/>
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <span class="social-name visually-hidden">вконтакте</span>
+                <img class="social-img" src="img/social-icons/vk.svg" width="26" height="15" alt="VK"/>
               </a>
             </li>
-            <li>
-              <a class="social-item" href="#">
-                <span class="social-name">фейсбук</span>
-                <img src="img/social-icons/fb.svg" width="12" height="22" alt="Facebook"/>
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <span class="social-name visually-hidden">фейсбук</span>
+                <img class="social-img" src="img/social-icons/fb.svg" width="12" height="22" alt="Facebook"/>
               </a>
             </li>
-            <li>
-              <a class="social-item" href="#">
-                <span class="social-name">инстаграм</span>
-                <img src="img/social-icons/insta.svg" width="21" height="21" alt="Instagram"/>
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <span class="social-name visually-hidden">инстаграм</span>
+                <img class="social-img" src="img/social-icons/insta.svg" width="21" height="21" alt="Instagram"/>
               </a>
             </li>
           </ul>
@@ -287,31 +302,33 @@
       </div>
     </footer>
 
-    <section class="modal appeal">
-      <h2 class="modal-title appeal-title">Напишите нам</h2>
-      <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appeal-item appeal-item-name">
-          <label>
-            Ваше имя:
-            <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" />
-          </label>
-        </p>
-        <p class="appeal-item appeal-item-email">
-          <label>
-            Ваш email:
-            <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
-          </label>
-        </p>
-        <p class="appeal-item appeal-item-text">
-          <label>
-            Текст письма:
-            <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме">
-            </textarea>
-          </label>
-        </p>
-        <button class="button modal-button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button"></button>
+    <section class="modal appeal visually-hidden">
+      <div class="modal-container">
+        <h2 class="modal-title appeal-title">Напишите нам</h2>
+        <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appeal-item appeal-item-name">
+            <label>
+              Ваше имя:
+              <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" />
+            </label>
+          </p>
+          <p class="appeal-item appeal-item-email">
+            <label>
+              Ваш email:
+              <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" />
+            </label>
+          </p>
+          <p class="appeal-item appeal-item-text">
+            <label>
+              Текст письма:
+              <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме">
+              </textarea>
+            </label>
+          </p>
+          <button class="button modal-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button"></button>
+      </div>
     </section>
 
   </body>
