@@ -19,7 +19,7 @@
     <header class="page-header">
       <nav class="main-navigation container">
         <a class="main-navigation-logo" href="index.html">
-          <img class="main-navigation-img" src="img/logo/nerds-logo.svg" width="150" height="65" alt="logo NЁRDS DESIGN STUDIO"/>
+          <img class="main-navigation-img" src="img/logo/nerds-logo.svg" width="160" height="65" alt="logo NЁRDS DESIGN STUDIO"/>
         </a>
         <ul class="page-navigation">
           <li><a class="page-navigation-item" href="blank.html">Студия</a></li>
@@ -42,61 +42,76 @@
   
           <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
             
-            <fieldset class="filter-group-price">
-              <legend class="filter-group-title filter-price-title">Стоимость</legend>
-              <div class="filter-option-price">
-                <div class="range-wrapper">
-                  <div class="price-range">
-                    <div class="price-range-value"></div>
+            <fieldset class="filter-item filter-item-price">
+              <legend class="filter-title">Стоимость</legend>
+              <div class="filter-range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      margin-left: 0%;
+                      width: 75%">
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                    left: 18px">
+                  </div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                    right: 79px">
                   </div>
                 </div>
-                <label class="price-label">
-                  от:<input class="price-value" type="number" name="current-min" value="0"/>
-                </label>
-                <label class="price-label">
-                  до:<input class="price-value" type="number" name="current-max" value="150000"/>
-                </label>
+                <div class="price-controls">
+                  <label>
+                    от:<input class="price-value price-min" type="number" name="current-min" value="0"/>
+                  </label>
+                  <label>
+                    до:<input class="price-value price-max" type="number" name="current-max" value="150000"/>
+                  </label>
+                </div>
               </div>
             </fieldset>
   
-            <fieldset class="filter-group filter-group-grid">
-              <legend class="filter-group-title">Сетка:</legend>
-              <p class="filter-option option-radio">
-                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked/>
-                <label class="filter-label" for="filter-adaptive">Адаптивная</label>
-              </p>
-              <p class="filter-option option-radio">
-                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="fix" id="filter-fix" />
-                <label class="filter-label" for="filter-fix">Фиксированная</label>
-              </p>
-              <p class="filter-option option-radio">
-                <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="rubber" id="filter-rubber" />
-                <label class="filter-label" for="filter-rubber">Резиновая</label>
-              </p>
+            <fieldset class="filter-item">
+              <legend class="filter-title">Сетка:</legend>
+              <div class="filter-grid">
+                <p class="filter-option option-radio">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked/>
+                  <label class="filter-label" for="filter-adaptive">Адаптивная</label>
+                </p>
+                <p class="filter-option option-radio">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="fix" id="filter-fix" />
+                  <label class="filter-label" for="filter-fix">Фиксированная</label>
+                </p>
+                <p class="filter-option option-radio">
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="grid" value="rubber" id="filter-rubber" />
+                  <label class="filter-label" for="filter-rubber">Резиновая</label>
+                </p>
+              </div>
             </fieldset>
   
-            <fieldset class="filter-group filter-group-features">
-              <legend class="filter-group-title">Особенности:</legend>
-              <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked />
-                <label class="filter-label" for="filter-slider">Слайдер</label>
-              </p>
-              <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantages" id="filter-advantages" />
-                <label class="filter-label" for="filter-advantages">Блок преимуществ</label>
-              </p>
-              <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked />
-                <label class="filter-label" for="filter-news">Новости</label>
-              </p>
-              <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery" />
-                <label class="filter-label" for="filter-gallery">Галерея</label>
-              </p>
-              <p class="filter-option option-checkbox">
-                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="busket" id="filter-busket" />
-                <label class="filter-label" for="filter-busket">Корзина</label>
-              </p>
+            <fieldset class="filter-item">
+              <legend class="filter-title">Особенности:</legend>
+              <div class="filter-features">
+                <p class="filter-option option-checkbox">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked />
+                  <label class="filter-label" for="filter-slider">Слайдер</label>
+                </p>
+                <p class="filter-option option-checkbox">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantages" id="filter-advantages" />
+                  <label class="filter-label" for="filter-advantages">Блок преимуществ</label>
+                </p>
+                <p class="filter-option option-checkbox">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked />
+                  <label class="filter-label" for="filter-news">Новости</label>
+                </p>
+                <p class="filter-option option-checkbox">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery" />
+                  <label class="filter-label" for="filter-gallery">Галерея</label>
+                </p>
+                <p class="filter-option option-checkbox">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="busket" id="filter-busket" />
+                  <label class="filter-label" for="filter-busket">Корзина</label>
+                </p>
+              </div>
             </fieldset>
   
             <button class="button-grey filter-button" type="submit">Показать</button>
