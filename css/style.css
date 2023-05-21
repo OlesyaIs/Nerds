@@ -223,6 +223,7 @@ img {
   width: 160px;
   height: 65px;
   margin-right: 202px;
+  flex-shrink: 0;
 }
 
 .main-navigation-logo[href]:hover {
@@ -277,6 +278,7 @@ img {
 /* User navigation */
 
 .user-cart {
+  flex-shrink: 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -345,7 +347,7 @@ img {
   margin: 0;
   margin-bottom: 68px;
   padding: 0;
-  background: url(../img/map.png) no-repeat;
+  /* background: url(../img/map.png) no-repeat; */
   background-size: cover;
 }
 
@@ -654,30 +656,28 @@ img {
 }
 
 .slide {
-  background-size: 760px 431px;
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+  background-size: 760px auto;
 }
 
 .slide:first-child {
-  background: url(../img/slider/smartphones.png) no-repeat;
-  background-position: right 0 top 0;
-  background-size: 760px 431px;
+  background-image: url(../img/slider/smartphones.png);
+  
 }
 
 .slide:nth-child(2) {
-  background: url(../img/slider/monoblocks.png) no-repeat;
-  background-position: right 0 top 0;
-  background-size: 760px 431px;
+  background-image: url(../img/slider/monoblocks.png);
 }
 
 .slide:nth-child(3) {
-  background: url(../img/slider/mobile-devices.png) no-repeat;
-  background-position: right 0 top 0;
-  background-size: 760px 431px;
+  background-image: url(../img/slider/mobile-devices.png);
 }
 
 .slide-lead {
   margin: 0;
   margin-bottom: 38px;
+  width: 538px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -703,6 +703,7 @@ img {
 
 .slider-controls-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -755,7 +756,7 @@ img {
 .services-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -765,6 +766,7 @@ img {
   width: 300px;
   min-height: 347px;
   margin-right: 100px;
+  margin-bottom: 80px;
 }
 
 .service-type:nth-of-type(3n) {
@@ -778,21 +780,21 @@ img {
   height: 146px;
   margin-bottom: 25px;
   background-color: var(--basic-light);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.service-type:first-child .service-title::before {
-  background: url('../img/services/laptop.png') no-repeat;
-  background-size: contain;
+.service-type.type-website .service-title::before {
+  background-image: url('../img/services/laptop.png');
 }
 
-.service-type:nth-child(2) .service-title::before {
-  background: url('../img/services/smartphones.png') no-repeat;
-  background-size: contain;
+.service-type.type-app .service-title::before {
+  background-image: url('../img/services/smartphones.png');
 }
 
-.service-type:nth-child(3) .service-title::before {
-  background: url('../img/services/presentation.png') no-repeat;
-  background-size: contain;
+.service-type.type-presentation .service-title::before {
+  background-image: url('../img/services/presentation.png');
 }
 
 .service-title {
@@ -861,15 +863,17 @@ img {
   grid-column: 1 / -1;
   grid-row: 1/2;
   min-height: 208px;
-  background: url(../img/nerds-festive.png) no-repeat;
+  background-image: url(../img/nerds-festive.png);
+  background-repeat: no-repeat;
   background-position: right 0 top 0;
-  background-size: 360px 208px;
+  background-size: 360px auto;
 }
 
 .studio-lead {
   margin: 0;
   margin-top: 34px;
   margin-bottom: 32px;
+  max-width: 660px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
