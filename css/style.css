@@ -205,10 +205,6 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  /* display: grid;
-  grid-template-columns: 160px 1fr auto;
-  align-items: start;
-  gap: 40px; */
   display: flex;
   align-items: flex-start;
 
@@ -243,35 +239,40 @@ img {
 .page-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 0;
   margin-top: 26px;
   margin-right: auto;
+  margin-bottom: -25px;
   padding: 0;
   list-style: none;
 }
 
 .page-navigation-item {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   margin-right: 45px;
+  margin-bottom: 45px;
+}
+
+.page-navigation-link {
   color: var(--basic-black);
 }
 
-.page-navigation-item[href]:hover, .user-cart[href]:hover {
+.page-navigation-link[href]:hover, .user-cart[href]:hover {
   color: var(--button-basic);
 }
 
-.page-navigation-item[href]:active, .user-cart[href]:active {
+.page-navigation-link[href]:active, .user-cart[href]:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.page-navigation-item.active::after {
+.page-navigation-link.active::after {
   content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
   width: 100%;
   height: 2px;
-  margin-top: 12px;
   background-color: var(--button-basic);
 }
 
@@ -281,11 +282,13 @@ img {
   flex-shrink: 0;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-self: right;
   position: relative;
+  max-width: 260px;
   margin-top: 26px;
-  margin-left: 202px;
+  margin-left: 95px;
   padding-left: 40px;
   color: var(--basic-black);
 }
@@ -297,6 +300,7 @@ img {
   width: 15px;
   height: 15px;
   background: url('../img/icons/cart-icon.svg') no-repeat;
+  background-size: contain;
 }
 
 .user-cart.active::after {
@@ -340,30 +344,42 @@ img {
   line-height: 18px;
 }
 
-/* Footer map */
+/* footer-contact-information */
 
-.footer-map {
-  min-height: 416px;
+.footer-contact-information {
   margin: 0;
   margin-bottom: 68px;
   padding: 0;
-  /* background: url(../img/map.png) no-repeat; */
-  background-size: cover;
+  background-color: var(--basic-extra-light);
+  background-repeat: no-repeat;
+}
+
+.contact-information-container {
+  position: relative;
+  display: flex;
+  width: 1440px;
+  min-height: 416px;
+  margin: 0 auto;
+}
+
+/* Footer map */
+
+.footer-map {
+  position: absolute;
+  width: 1440px;
+  height: 416px;
+  margin: 0 auto;
+  background-image: url(../img/map-marker.png), url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: top 70px left 847px, center;
 }
 
 /* Footer contacts */
 
 .footer-contacts {
-  position: absolute;
-  width: 100%;
-  top: 54px;
-}
-
-.contacts-container {
-  width: 1160px;
-  margin: 0 auto;
-  padding-right: 40px;
-  padding-left: 40px;
+  margin: auto 0;
+  margin-left: 140px;
+  z-index: 1;
 }
 
 .contacts-content {
@@ -383,6 +399,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .footer-address {
@@ -420,7 +437,7 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 260px;
+  width: 260px;
   margin: 0;
   margin-right: 140px;
   padding: 0;
@@ -463,6 +480,12 @@ img {
 
 .social-link:active .social-img {
   opacity: 30%;
+}
+
+.social-img {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
 }
 
 /* Footer discount */
@@ -928,6 +951,7 @@ img {
 
 .about-principles {
   grid-column: -3/-1;
+  margin-bottom: -10px;
 }
 
 .principles-title {
@@ -936,14 +960,24 @@ img {
 }
 
 .principle-list {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  column-gap: 20px;
-  row-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 360px;
+  margin-bottom: -10px;
+}
+
+.principle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 110px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
 }
 
 .principle-list dt {
-  order: -1;
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
@@ -958,6 +992,7 @@ img {
 
 .principle-list dd {
   margin: 0;
+  margin-top: auto;
   padding: 0;
   font-size: 16px;
   line-height: 18px;
@@ -1012,6 +1047,7 @@ img {
 }
 
 .clients-logo {
+  object-fit: contain;
   opacity: 0.2;
 }
 
@@ -1080,6 +1116,10 @@ img {
   text-transform: uppercase;
 }
 
+.filter-item:first-of-type .filter-title {
+  margin-bottom: 48px;
+}
+
 .filter-option {
   position: relative;
   margin: 0;
@@ -1128,7 +1168,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: 35px;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-extra-dark);
@@ -1245,8 +1284,7 @@ img {
 
 .sort {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   margin-bottom: 48px;
 }
 
@@ -1368,12 +1406,14 @@ img {
 .card-content {
   display: flex;
   flex-direction: column;
-  width: 360px;
-  height: 580px;
+  /* width: 360px;
+  height: 580px; */
+  width: 358px;
+  height: 578px;
   border: 1px solid var(--card-border);
   border-radius: 0 0 5px 5px;
   background-color: var(--card-background);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .content-img {
@@ -1401,7 +1441,6 @@ img {
 
 .card-title {
   margin: 0;
-  margin-bottom: 12px;
   padding: 0;
 }
 
@@ -1442,6 +1481,8 @@ img {
 }
 
 .card:hover .card-content{
+  width: 360px;
+  height: 580px;
   border: none;
   filter: drop-shadow(0px 6px 15px var(--card-shadow-opacity));
 }
@@ -1463,11 +1504,12 @@ img {
 }
 
 .pagination-button {
-  display: block;
+  display: flex;
   min-width: 50px;
   height: 50px;
-  margin: 0;
-  padding: 15px 10px 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
   font: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -1477,7 +1519,7 @@ img {
   border: none;
   box-sizing: border-box;
 
-  /* transition-duration: 0.4s; */
+  transition-duration: 0.4s;
 }
 
 .pagination-button-next {
@@ -1485,8 +1527,6 @@ img {
 }
 
 .pagination-button.active-button {
-  padding-top: 12px;
-  padding-bottom: 12px;
   background-color: var(--basic-white);
   border: 3px solid var(--pagination-border);
 }

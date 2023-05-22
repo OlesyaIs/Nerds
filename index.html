@@ -22,10 +22,10 @@
           <img class="main-navigation-img" src="img/logo/nerds-logo.svg" width="160" height="65" alt="logo NЁRDS DESIGN STUDIO"/>
         </a>
         <ul class="page-navigation">
-          <li><a class="page-navigation-item" href="blank.html">Студия</a></li>
-          <li><a class="page-navigation-item" href="blank.html">Клиенты</a></li>
-          <li><a class="page-navigation-item" href="catalog.html">Магазин</a></li>
-          <li><a class="page-navigation-item" href="blank.html">Контакты</a></li>
+          <li class="page-navigation-item"><a class="page-navigation-link" href="blank.html">Студия</a></li>
+          <li class="page-navigation-item"><a class="page-navigation-link" href="blank.html">Клиенты</a></li>
+          <li class="page-navigation-item"><a class="page-navigation-link active">Магазин</a></li>
+          <li class="page-navigation-item"><a class="page-navigation-link" href="blank.html">Контакты</a></li>
         </ul>
         <a class="user-cart" href="blank.html">Корзина</a>
       </nav>
@@ -137,14 +137,18 @@
           <div class="about-principles">
             <h3 class="list-title principles-title">с 2004 года Любим точность во всем:</h3>
             <dl class="principle-list">
-              <dt>146<span class="percent">%</span></dt>
-              <dd>Уровень самоотдачи</dd>
-    
-              <dt>100<span class="percent">%</span></dt>
-              <dd>Соблюдение сроков</dd>
-    
-              <dt>50<span class="percent">%</span></dt>
-              <dd>Минимальная предоплата</dd>
+              <div class="principle-item">
+                <dt>146<span class="percent">%</span></dt>
+                <dd>Уровень самоотдачи</dd>
+              </div>
+              <div class="principle-item">
+                <dt>100<span class="percent">%</span></dt>
+                <dd>Соблюдение сроков</dd>
+              </div>
+              <div class="principle-item">
+                <dt>50<span class="percent">%</span></dt>
+                <dd>Минимальная предоплата</dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -172,31 +176,32 @@
     </main>
 
     <footer class="main-footer">
-      <section class="footer-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.2056519148402!2d30.316191176117336!3d59.968265994393086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1684676749979!5m2!1sru!2sru" 
-          width="100%" 
-          height="416" 
-          style="border:0;" 
-          allowfullscreen="" 
-          title="Офис компании по адресу наб. Pеки Карповки, 5П, Санкт-Петербург"
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </section>
-
-      <section class="footer-contacts">
-        <div class="contacts-container">
-          <div class="contacts-content">
-            <h2 class="visually-hidden">Контактная информация</h2>
-            <p class="footer-name">NЁRDS DESIGN STUDIO</p>
-            <address class="footer-address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</address>
-            <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-            <a class="button contacts-button">Напишите нам</a>
-          </div>
+      <div class="footer-contact-information">
+        <div class="contact-information-container">
+          <section class="footer-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+            <!-- <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.2056519148402!2d30.316191176117336!3d59.968265994393086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1684676749979!5m2!1sru!2sru" 
+              width="100%" 
+              height="416" 
+              style="border:0;" 
+              allowfullscreen="" 
+              title="Офис компании по адресу наб. Pеки Карповки, 5П, Санкт-Петербург"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe> -->
+          </section>
+          <section class="footer-contacts">
+            <div class="contacts-content">
+              <h2 class="visually-hidden">Контактная информация</h2>
+              <p class="footer-name">NЁRDS DESIGN STUDIO самая лучшая студия в Тюмени</p>
+              <address class="footer-address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</address>
+              <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="button contacts-button">Напишите нам</a>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
       
       <div class="container">
         <section class="footer-social">
@@ -220,7 +225,6 @@
                     11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 
                     13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
                 </svg>
-                  
               </a>
             </li>
             <li class="social-item">
