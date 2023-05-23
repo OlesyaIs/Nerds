@@ -179,7 +179,7 @@
       <div class="footer-contact-information">
         <div class="contact-information-container">
           <section class="footer-map">
-          <h2 class="visually-hidden">Как до нас добраться</h2>
+            <h2 class="visually-hidden">Как до нас добраться</h2>
             <!-- <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.2056519148402!2d30.316191176117336!3d59.968265994393086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1684676749979!5m2!1sru!2sru" 
               width="100%" 
@@ -263,30 +263,31 @@
     </footer>
 
     <section class="modal appeal visually-hidden">
-      <h2 class="modal-title appeal-title">Напишите нам</h2>
-      <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appeal-item appeal-item-name">
-          <label>
-            Ваше имя:
-            <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия">
-          </label>
-        </p>
-        <p class="appeal-item appeal-item-email">
-          <label>
-            Ваш email:
-            <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com">
-          </label>
-        </p>
-        <p class="appeal-item appeal-item-text">
-          <label>
-            Текст письма:
-            <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме">
-            </textarea>
-          </label>
-        </p>
-        <button class="button modal-button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button"></button>
+      <div class="modal-container">
+        <h2 class="modal-title appeal-title">Напишите нам</h2>
+        <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appeal-item appeal-item-name">
+            <label>
+              Ваше имя:
+              <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" required>
+            </label>
+          </p>
+          <p class="appeal-item appeal-item-email">
+            <label>
+              Ваш email:
+              <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" required>
+            </label>
+          </p>
+          <p class="appeal-item appeal-item-text">
+            <label>
+              Текст письма:
+              <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме" required></textarea>
+            </label>
+          </p>
+          <button class="button modal-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button"></button>
+      </div>
     </section>
 
   </body>

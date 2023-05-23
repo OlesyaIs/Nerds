@@ -121,30 +121,31 @@
     </footer>
 
     <section class="modal appeal visually-hidden">
-      <h2 class="modal-title appeal-title">Напишите нам</h2>
-      <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appeal-item appeal-item-name">
-          <label>
-            Ваше имя:
-            <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия">
-          </label>
-        </p>
-        <p class="appeal-item appeal-item-email">
-          <label>
-            Ваш email:
-            <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com">
-          </label>
-        </p>
-        <p class="appeal-item appeal-item-text">
-          <label>
-            Текст письма:
-            <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме">
-            </textarea>
-          </label>
-        </p>
-        <button class="button modal-button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button"></button>
+      <div class="modal-container">
+        <h2 class="modal-title appeal-title">Напишите нам</h2>
+        <form class="appeal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appeal-item appeal-item-name">
+            <label>
+              Ваше имя:
+              <input class="appeal-field" type="text" name="appeal-field appeal-name" placeholder="Имя Фамилия" required>
+            </label>
+          </p>
+          <p class="appeal-item appeal-item-email">
+            <label>
+              Ваш email:
+              <input class="appeal-field" type="email" name="appeal-field appeal-email" placeholder="email@example.com" required>
+            </label>
+          </p>
+          <p class="appeal-item appeal-item-text">
+            <label>
+              Текст письма:
+              <textarea class="appeal-field appeal-textarea" name="appeal-field appeal-text" rows="3" placeholder="В свободной форме" required></textarea>
+            </label>
+          </p>
+          <button class="button modal-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button"></button>
+      </div>
     </section>
     
   </body>

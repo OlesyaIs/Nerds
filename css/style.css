@@ -100,6 +100,10 @@ h1, h2, h3, h4 , h5, h6 {
   padding: 0;
 }
 
+.page-main *first-child:not(.visually-hidden) {
+  background-color: var(--basic-extra-light);
+}
+
 .main-title {
   font-size: 55px;
   line-height: 55px;
@@ -512,9 +516,13 @@ img {
 /* Modal */
 
 .modal {
-  position: absolute;
-  bottom: 180px;
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  bottom: 130px;
   width: 100%;
+  margin: 0;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
 }
@@ -523,11 +531,10 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 960px;
-  margin: 0 auto 0;
+  width: 760px;
+  margin: 0 auto;
   padding: 63px 100px 84px;
-  box-sizing: border-box;
-  background-color:var(--basic-white);
+  background-color: var(--basic-white);
   box-shadow: 0px 20px 40px var(--basic-black-opacity);
 }
 
@@ -547,6 +554,7 @@ img {
   column-gap: 40px;
   row-gap: 34px;
   margin: 0;
+  background-color: gree;
 }
 
 .appeal-item {
@@ -601,7 +609,7 @@ img {
   opacity: 1;
 }
 
-.appeal-field:invalid {
+.appeal-field:focus:invalid {
   color: var(--modal-invalid);
   border: 2px solid var(--modal-invalid);
 }
