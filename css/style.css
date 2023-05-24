@@ -205,7 +205,7 @@ img {
 /* Header */
 .page-header {
   margin: 0;
-  padding: 49px 0 0;
+  padding: 49px 0 5px;
   background-color: var(--basic-extra-light);
 }
 
@@ -1161,6 +1161,11 @@ img {
 
 .filter-input:hover:not(:disabled) + .filter-label::before,
 .filter-input:hover:not(:disabled) + .filter-label::after {
+  opacity: 1;
+}
+
+.filter-input:focus:not(:disabled) + .filter-label::before,
+.filter-input:focus:not(:disabled) + .filter-label::after {
   opacity: 1;
 }
 
