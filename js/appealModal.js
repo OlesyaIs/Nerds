@@ -36,8 +36,11 @@ openAppealButton.addEventListener('click', function(evt) {
 appealForm.addEventListener('submit', function(evt) {
   if (!appealName.value || !appealEmail.value || !appealText.value) {
     evt.preventDefault();
+    appealModal.classList.remove('modal-error');
+    appealModal.offsetWidth = appealModal.offsetWidth;
+    appealModal.classList.add('modal-error');
   } else {
-    if (isStorageSupport) {
+    if (isStorageSupport) { 
       localStorage.setItem('name', appealName.value);
       localStorage.setItem('email', appealEmail.value);
     }
@@ -46,10 +49,12 @@ appealForm.addEventListener('submit', function(evt) {
 
 closeAppealButton.addEventListener('click', function() {
   appealModal.classList.remove('modal-show');
+  appealModal.classList.remove('modal-error');
 });
 
 window.addEventListener('keydown', function(evt) {
   if (evt.code === 'Escape') {
     appealModal.classList.remove('modal-show');
+    appealModal.classList.remove('modal-error');
   }
 });

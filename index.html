@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   
   <body class="page-body index-page">
@@ -74,11 +74,11 @@
           </ul>
           <div class="controls-container">
             <div class="slider-controls-list">
-              <input class="slider-input" type="radio" name="slider-value" value="placeholder.png" id="slide-1" checked>
+              <input class="slider-input" type="radio" name="slider-value" value="1" id="slide-1" checked>
               <label class="slider-control" for="slide-1" tabindex="0" aria-label="Слайд 1"></label>
-              <input class="slider-input" type="radio" name="slider-value" value="placeholder.png" id="slide-2">
+              <input class="slider-input" type="radio" name="slider-value" value="2" id="slide-2">
               <label class="slider-control" for="slide-2" tabindex="0" aria-label="Слайд 2"></label>
-              <input class="slider-input" type="radio" name="slider-value" value="placeholder.png" id="slide-3">
+              <input class="slider-input" type="radio" name="slider-value" value="3" id="slide-3">
               <label class="slider-control" for="slide-3" tabindex="0" aria-label="Слайд 3"></label>
             </div>
           </div>
@@ -178,36 +178,34 @@
     <footer class="main-footer">
       <div class="footer-contact-information">
         <div class="contact-information-container">
-          <section class="footer-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <!-- <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.2056519148402!2d30.316191176117336!3d59.968265994393086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1684676749979!5m2!1sru!2sru" 
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              title="Офис компании по адресу наб. Pеки Карповки, 5П, Санкт-Петербург"
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe> -->
-            <iframe 
-              src="https://yandex.ru/map-widget/v1/?ll=30.320512%2C59.962746&mode=poi&poi%5Bpoint%5D=30.317768%2C59.968516&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D24933578998&z=16" 
-              width="100%" 
-              height="100%" 
-              frameborder="0" 
-              allowfullscreen="true">
-            </iframe>
-          </section>
           <section class="footer-contacts">
-            <div class="contacts-content">
-              <h2 class="visually-hidden">Контактная информация</h2>
-              <p class="footer-name">NЁRDS DESIGN STUDIO</p>
-              <address class="footer-address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</address>
-              <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-              <a class="button contacts-button" href="#" tabindex="0">Напишите нам</a>
-            </div>
+            <h2 class="visually-hidden">Контактная информация</h2>
+            <p class="footer-name">NЁRDS DESIGN STUDIO</p>
+            <address class="footer-address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</address>
+            <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a class="button contacts-button" href="#" tabindex="0">Напишите нам</a>
           </section>
         </div>
+        <section class="footer-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <!-- <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.2056519148402!2d30.316191176117336!3d59.968265994393086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1684676749979!5m2!1sru!2sru" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            title="Офис компании по адресу наб. Pеки Карповки, 5П, Санкт-Петербург"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe> -->
+          <iframe 
+            src="https://yandex.ru/map-widget/v1/?ll=30.320512%2C59.962746&mode=poi&poi%5Bpoint%5D=30.317768%2C59.968516&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D24933578998&z=16" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            allowfullscreen="true">
+          </iframe>
+        </section>
       </div>
       
       <div class="container">
@@ -276,19 +274,19 @@
           <p class="appeal-item appeal-item-name">
             <label>
               Ваше имя:
-              <input class="appeal-field" type="text" name="appeal-name" placeholder="Имя Фамилия" required>
+              <input class="appeal-field" type="text" name="appeal-name" placeholder="Имя Фамилия">
             </label>
           </p>
           <p class="appeal-item appeal-item-email">
             <label>
               Ваш email:
-              <input class="appeal-field" type="email" name="appeal-email" placeholder="email@example.com" required>
+              <input class="appeal-field" type="email" name="appeal-email" placeholder="email@example.com">
             </label>
           </p>
           <p class="appeal-item appeal-item-text">
             <label>
               Текст письма:
-              <textarea class="appeal-field appeal-textarea" name="appeal-text" rows="3" placeholder="В свободной форме" required></textarea>
+              <textarea class="appeal-field appeal-textarea" name="appeal-text" rows="3" placeholder="В свободной форме"></textarea>
             </label>
           </p>
           <button class="button modal-button" type="submit">Отправить</button>
@@ -296,6 +294,7 @@
         <button class="modal-close appeal-close" type="button" aria-label="Закрыть форму для отправки сообщения"></button>
       </div>
     </section>
-    <script src="js/appealModal.js"></script>
+    <script src="js/appealModal.min.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

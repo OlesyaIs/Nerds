@@ -51,8 +51,6 @@
   --pagination-shadow-opacity: rgba(0, 1, 1, 0.1);
   --pagination-active-text: rgba(0, 0, 0, 0.3);
 
-  --footer-map-background: transparent;
-
   --modal-basic: #D7DCDE;
   --modal-hover: #B4B9BB;
   --modal-focus: #000000;
@@ -354,51 +352,50 @@ img {
 /* footer-contact-information */
 
 .footer-contact-information {
+  position: relative;
   margin: 0;
   margin-bottom: 68px;
   padding: 0;
-  background-color: var(--footer-map-background);
-  background-repeat: no-repeat;
-}
-
-.contact-information-container {
-  position: relative;
-  display: flex;
-  width: 1440px;
-  min-height: 416px;
-  margin: 0 auto;
   background-color: var(--basic-extra-light);
   background-image: url(../img/mapWithMarker.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 /* Footer map */
 
 .footer-map {
   position: absolute;
-  width: 1440px;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+}
+
+.contact-information-container {
+  display: flex;
+  width: 1440px;
+  min-height: 416px;
   margin: 0 auto;
-  
 }
 
 /* Footer contacts */
 
 .footer-contacts {
-  margin: auto 0;
-  margin-left: 140px;
-  z-index: 1;
-}
-
-.contacts-content {
   display: flex;
   flex-direction: column;
   width: 319px;
   margin: 54px 0;
+  margin-left: 140px;
   padding: 50px;
   background-color: var(--basic-white);
   box-sizing: border-box;
+  z-index: 1;
+}
+
+.contacts-content {
+ 
 }
 
 .footer-name {
@@ -524,7 +521,7 @@ img {
   display: none;
   z-index: 2;
   position: fixed;
-  bottom: 130px;
+  bottom: 15%;
   width: 100%;
   margin: 0;
   box-sizing: border-box;
@@ -534,6 +531,14 @@ img {
 
 .modal-show {
   display: flex;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .modal-container {
@@ -1573,4 +1578,34 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+/* Animation */
+
+@keyframes bounce {
+  from { transform: translateY(1500px); }
+  to { transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
 }
