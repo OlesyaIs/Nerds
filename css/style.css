@@ -367,6 +367,10 @@ img {
   width: 1440px;
   min-height: 416px;
   margin: 0 auto;
+  background-color: var(--basic-extra-light);
+  background-image: url(../img/mapWithMarker.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Footer map */
@@ -374,11 +378,9 @@ img {
 .footer-map {
   position: absolute;
   width: 1440px;
-  height: 416px;
+  height: 100%;
   margin: 0 auto;
-  background-image: url(../img/map-marker.png), url(../img/map.png);
-  background-repeat: no-repeat;
-  background-position: top 70px left 847px, center;
+  
 }
 
 /* Footer contacts */
@@ -393,7 +395,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 319px;
-  margin: 0;
+  margin: 54px 0;
   padding: 50px;
   background-color: var(--basic-white);
   box-sizing: border-box;
