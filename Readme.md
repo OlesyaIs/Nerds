@@ -1,6 +1,6 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Олеся Исиченко](isichenko.ok@gmail.com).
 * Наставник: `Неизвестно`.
 
 ---
